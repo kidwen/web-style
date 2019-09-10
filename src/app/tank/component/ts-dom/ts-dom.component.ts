@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer, AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-ts-dom',
@@ -6,13 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ts-dom.component.scss']
 })
 
-export class TsDomComponent implements OnInit {
+export class TsDomComponent implements AfterViewInit {
+  @ViewChild('bar', null)
+  public bar?: ElementRef;
+  constructor(
+    private elementRef: ElementRef,
+    // tslint:disable-next-line: deprecation
+    private renderer: Renderer,
+  ) { }
 
-  constructor() {
-    return;
-  }
-
-  ngOnInit() {
-    return;
+  public ngAfterViewInit() {
+    this.renderer.setElementStyle(this.bar.nativeElement, 'width', '5rem');
   }
 }

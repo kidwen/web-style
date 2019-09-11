@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Renderer, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, AfterViewInit, ViewChild, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-ts-dom',
@@ -11,11 +11,10 @@ export class TsDomComponent implements AfterViewInit {
   public bar?: ElementRef;
   constructor(
     private elementRef: ElementRef,
-    // tslint:disable-next-line: deprecation
-    private renderer: Renderer,
+    private renderer: Renderer2,
   ) { }
 
   public ngAfterViewInit() {
-    this.renderer.setElementStyle(this.bar.nativeElement, 'width', '5rem');
+    this.renderer.setStyle(this.bar.nativeElement, 'width', '5rem'); // 注意一定要有单位
   }
 }

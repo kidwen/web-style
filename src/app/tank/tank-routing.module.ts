@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-fount.component';
 
-const lazyModules: Routes = [];
+const lazyModules: Routes = [{
+  path: 'home',
+  loadChildren: 'src/modules/home/home.module#HomeModule',
+}];
 
 const routes: Routes = [{
   path: '',

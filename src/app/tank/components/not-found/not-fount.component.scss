@@ -1,0 +1,19 @@
+:host {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #261f26;
+  img {
+      margin: auto;
+  }
+  .count-down {
+      color: white;
+      font-size: 2rem;
+      padding-top: 1rem;
+  }
+}

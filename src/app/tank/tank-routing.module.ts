@@ -6,6 +6,9 @@ import { NotFoundComponent } from './components/not-found/not-fount.component';
 const lazyModules: Routes = [{
   path: 'home',
   loadChildren: 'src/modules/home/home.module#HomeModule',
+}, {
+  path: 'gantt',
+  loadChildren: 'src/modules/gantt/planning/plan-gantt.module#PlanGanttModule'
 }];
 
 const routes: Routes = [{

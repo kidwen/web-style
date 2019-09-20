@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-fount.component';
-// import { PlanGanttComponent } from 'src/modules/gantt/planning/components/plan-gantt/plan-gantt.component';
 
 const lazyModules: Routes = [{
   path: 'home',

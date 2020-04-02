@@ -1,0 +1,10 @@
+<main>
+    <nav (click)="hideSideMenu()" [ngClass]="{'ui-sidemenu-open':openSideMenu}">
+        <a [routerLink]="'/'">style</a>
+        <a [routerLink]="'/rxjs'">rxjs</a>
+        <a [routerLink]="'/dialog'">dialog</a>
+    </nav>
+    <article>
+        <router-outlet></router-outlet>
+    </article>
+</main>

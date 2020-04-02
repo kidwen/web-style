@@ -4,14 +4,14 @@ import { NotFoundComponent } from './components/not-found/not-fount.component';
 import { NgModule } from '@angular/core';
 
 @NgModule({
-  imports: [
-    TankRoutingModule,
-  ],
-  declarations: [
-    MainComponent,
-    NotFoundComponent,
-  ],
-  exports: [],
+    imports: [
+        TankRoutingModule,
+    ],
+    declarations: [
+        MainComponent,
+        NotFoundComponent,
+    ],
+    exports: [],
 })
 
 export class TankModule { }

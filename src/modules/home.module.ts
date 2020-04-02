@@ -5,14 +5,14 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { MenuModule } from 'primeng/menu';
 
 @NgModule({
-  imports: [
-    HomeRoutingModule,
-    MenuModule,
-  ],
-  declarations: [
-    HomeComponent,
-    RxjsComponent,
-  ]
+    imports: [
+        HomeRoutingModule,
+        MenuModule,
+    ],
+    declarations: [
+        HomeComponent,
+        RxjsComponent,
+    ]
 })
 
 export class HomeModule { }

@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
-import { DialogComponent } from './dialog/dialog.component';
+import { PositionComponent } from './position/position.component';
 
 @NgModule({
     imports: [
@@ -15,7 +15,7 @@ import { DialogComponent } from './dialog/dialog.component';
     declarations: [
         HomeComponent,
         RxjsComponent,
-        DialogComponent,
+        PositionComponent,
     ]
 })
 

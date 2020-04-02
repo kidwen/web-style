@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'style-root',
-  template: `<router-outlet></router-outlet>`,
-  styleUrls: ['./app.component.scss']
+    selector: 'style-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'style-app';
+    title = 'style-app';
 
-  public constructor() {
-  }
+    public openSideMenu = false;
+
+    public constructor() {
+    }
+
+    public hideSideMenu(): void {
+        this.openSideMenu = false;
+    }
 }

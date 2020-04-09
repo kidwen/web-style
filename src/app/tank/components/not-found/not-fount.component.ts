@@ -1,12 +1,12 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
     selector: 'style-not-fount',
     templateUrl: './not-fount.component.html',
-    styleUrls: ['./not-fount.component.scss']
+    styleUrls: ['./not-fount.component.scss'],
 })
 export class NotFoundComponent implements OnInit, OnDestroy {
-    public countDown = 5;
+    public countDown: number = 5;
     private intervalId?: number;
 
     public ngOnInit(): void {

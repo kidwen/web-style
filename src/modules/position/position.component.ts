@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'style-position',

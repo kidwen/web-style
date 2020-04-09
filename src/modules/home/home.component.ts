@@ -8,13 +8,13 @@ import { MenuItem } from 'primeng/api';
 })
 
 export class HomeComponent implements OnInit {
-    items: MenuItem[];
+    public items: Array<MenuItem>;
 
-    public ngOnInit() {
+    public ngOnInit(): void {
         this.items = [
             { label: 'New', icon: 'pi pi-fw pi-plus' },
             { label: 'Open', icon: 'pi pi-fw pi-download' },
-            { label: 'Undo', icon: 'pi pi-fw pi-refresh' }
+            { label: 'Undo', icon: 'pi pi-fw pi-refresh' },
         ];
     }
 }

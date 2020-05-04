@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CssStyleComponent } from './css-style/css-style.component';
 import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
@@ -8,6 +9,7 @@ const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
     { path: 'rxjs', component: RxjsComponent },
     { path: 'position', component: PositionComponent },
+    { path: 'css', component: CssStyleComponent },
 ];
 
 @NgModule({

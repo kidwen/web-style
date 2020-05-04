@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { TankModule } from './tank/tank.module';
@@ -12,6 +13,7 @@ import { TankModule } from './tank/tank.module';
         RouterModule.forRoot([]),
         BrowserModule,
         TankModule,
+        BrowserAnimationsModule,
     ],
     bootstrap: [AppComponent],
 })

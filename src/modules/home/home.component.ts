@@ -8,7 +8,7 @@ import { MenuItem } from 'primeng/api';
 })
 
 export class HomeComponent implements OnInit {
-    public items: Array<MenuItem>;
+    public items?: Array<MenuItem>;
 
     public ngOnInit(): void {
         this.items = [

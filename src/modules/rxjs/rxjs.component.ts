@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { animationFrameScheduler, asyncScheduler, SchedulerAction, Subscription } from 'rxjs';
 
 let div: HTMLDivElement | null = null;
@@ -11,9 +11,11 @@ export class RxjsComponent implements OnInit, OnDestroy {
     public divContent?: string;
     public sub$?: Subscription;
     public animal$?: Subscription;
+    @ViewChild('animal', { static: true })
+    public animalDiv?: ElementRef;
 
     public ngOnInit(): void {
-        div = document.querySelector('div');
+        div = this.animalDiv?.nativeElement as HTMLDivElement;
         this.animal$ = animationFrameScheduler.schedule(addHeight, 0, 0);
     }
 

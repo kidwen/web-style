@@ -15,7 +15,9 @@ export class RxjsComponent implements OnInit, OnDestroy {
     public animalDiv?: ElementRef;
 
     public ngOnInit(): void {
-        div = this.animalDiv?.nativeElement as HTMLDivElement;
+        if (this.animalDiv) {
+            div = this.animalDiv.nativeElement as HTMLDivElement;
+        }
         this.animal$ = animationFrameScheduler.schedule(addHeight, 0, 0);
     }
 
@@ -28,8 +30,12 @@ export class RxjsComponent implements OnInit, OnDestroy {
     }
 
     public ngOnDestroy(): void {
-        this.sub$?.unsubscribe();
-        this.animal$?.unsubscribe();
+        if (this.sub$) {
+            this.sub$.unsubscribe();
+        }
+        if (this.animal$) {
+            this.animal$.unsubscribe();
+        }
     }
 
 }

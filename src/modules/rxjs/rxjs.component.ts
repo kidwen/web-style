@@ -19,6 +19,9 @@ export class RxjsComponent implements OnInit, OnDestroy {
             div = this.animalDiv.nativeElement as HTMLDivElement;
         }
         this.animal$ = animationFrameScheduler.schedule(addHeight, 0, 0);
+        let s: any = (sProp: string): void => {
+            console.info(sProp);
+        };
     }
 
     public getI(): void {

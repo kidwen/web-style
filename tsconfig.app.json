@@ -11,6 +11,11 @@
     "include": [
         "src/**/*.ts"
     ],
+    "paths": {
+        "@walle/shared": [
+            "src/app/shared"
+        ]
+    },
     "exclude": [
         "src/test.ts",
         "src/**/*.spec.ts"

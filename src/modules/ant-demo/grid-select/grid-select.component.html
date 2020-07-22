@@ -1,0 +1,26 @@
+<div ng-row>
+    <label ng-col nzSpan="12">这是1</label>
+    <nz-select [(ngModel)]="selectedValue" nzPlaceHolder="Choose" dropdownMatchSelectWidth="false" bordered="true" showSearch="false">
+        <nz-option nzValue="jack" nzLabel="Jackaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"></nz-option>
+        <nz-option nzValue="lucy" nzLabel="Lucyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"></nz-option>
+        <nz-option nzValue="disabled" nzLabel="Disabledaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" nzDisabled></nz-option>
+    </nz-select>
+</div>
+<form nz-form>
+    <nz-form-item ng-col>
+        <nz-form-label [nzSpan]="6" nzFor="email">E-mail</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+            <nz-select [(ngModel)]="selectedValue" nzPlaceHolder="Choose" dropdownMatchSelectWidth="false" bordered="true" showSearch="false">
+                <nz-option nzValue="jack" nzLabel="AAAAAAAAAAAAAAAAAAA"></nz-option>
+                <nz-option nzValue="lucy" nzLabel="BBBBBBBBBBBBBBBBBBBB"></nz-option>
+                <nz-option nzValue="disabled" nzLabel="C" nzDisabled></nz-option>
+            </nz-select>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="email">E-mail</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+            <input nz-input name="email" type="email" id="email">
+        </nz-form-control>
+    </nz-form-item>
+</form>

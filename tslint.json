@@ -413,6 +413,7 @@
             "single"
         ],
         "return-undefined": true,
+        // 强制分号结尾 https://palantir.github.io/tslint/rules/semicolon
         "semicolon": [
             true,
             "always"

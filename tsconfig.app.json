@@ -5,8 +5,7 @@
     "extends": "./tsconfig.base.json",
     "files": [
         "src/main.ts",
-        "src/polyfills.ts",
-        "src/zone-flags.ts"
+        "src/polyfills.ts"
     ],
     "include": [
         "src/**/*.d.ts"

@@ -3,10 +3,5 @@
 /* 引入组件样式 */
 @import "~ng-zorro-antd/button/style/index.min.css";
 
-a {
-    color: red;
-}
-
-a:hover {
-    color: darkblue;
-}
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/nova-dark/theme.css"

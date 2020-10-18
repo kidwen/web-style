@@ -7,6 +7,7 @@ import { ButtonModule } from 'primeng/button';
 import { MenuModule } from 'primeng/menu';
 import { GridSelectComponent } from './ant-demo/grid-select/grid-select.component';
 import { CssStyleComponent } from './css-style/css-style.component';
+import { directives } from './directives';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
@@ -28,6 +29,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         PositionComponent,
         CssStyleComponent,
         GridSelectComponent,
+        ...directives,
     ],
 })
 

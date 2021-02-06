@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { AnimateComponent } from './animate/animate.component';
 import { GridSelectComponent } from './ant-demo/grid-select/grid-select.component';
 import { CssStyleComponent } from './css-style/css-style.component';
 import { directives } from './directives';
@@ -20,6 +21,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         NzSelectModule,
     ],
     declarations: [
+        AnimateComponent,
         HomeComponent,
         RxjsComponent,
         PositionComponent,

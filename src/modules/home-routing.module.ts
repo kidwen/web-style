@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnimateComponent } from './animate/animate.component';
 import { GridSelectComponent } from './ant-demo/grid-select/grid-select.component';
 import { CssStyleComponent } from './css-style/css-style.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
     { path: 'rxjs', component: RxjsComponent },
     { path: 'position', component: PositionComponent },
     { path: 'css', component: CssStyleComponent },
+    { path: 'animate', component: AnimateComponent },
     { path: 'ant', component: GridSelectComponent },
 ];
 

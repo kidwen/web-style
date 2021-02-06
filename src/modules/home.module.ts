@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { AnimateComponent } from './animate/animate.component';
@@ -18,6 +19,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         HomeRoutingModule,
         FormsModule,
         NzGridModule,
+        NzButtonModule,
         NzSelectModule,
     ],
     declarations: [

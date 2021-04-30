@@ -33,6 +33,7 @@
                             }
                         ],
                         "styles": [
+                            "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
                             "src/theme.less",
                             "src/styles.scss",
                             "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"

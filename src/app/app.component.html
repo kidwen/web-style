@@ -1,12 +1,5 @@
 <main>
-    <nav (click)="hideSideMenu()" [ngClass]="{'ui-sidemenu-open':openSideMenu}">
-        <a [routerLink]="'/'">home</a>
-        <a [routerLink]="'/rxjs'">rxjs</a>
-        <a [routerLink]="'/position'">position</a>
-        <a [routerLink]="'/css'">css</a>
-        <a [routerLink]="'/animate'">animate</a>
-        <a [routerLink]="'/404'">404</a>
-    </nav>
+    <style-menu-nav></style-menu-nav>
     <article>
         <router-outlet></router-outlet>
     </article>

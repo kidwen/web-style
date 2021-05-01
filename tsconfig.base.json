@@ -22,7 +22,12 @@
         "lib": [
             "es2018",
             "dom"
-        ]
+        ],
+        "paths": {
+            "@kidwen/layout": [
+                "projects/layout/src/public-api"
+            ]
+        }
     },
     "angularCompilerOptions": {
         "fullTemplateTypeCheck": true,

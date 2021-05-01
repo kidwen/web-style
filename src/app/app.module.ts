@@ -9,6 +9,7 @@ import { NZ_I18N, zh_CN } from 'ng-zorro-antd/i18n';
 import { HomeModule } from '../modules/home.module';
 import { AppComponent } from './app.component';
 import { TankModule } from './tank/tank.module';
+import { LayoutModule } from '@kidwen/layout';
 
 registerLocaleData(zh);
 
@@ -23,6 +24,7 @@ registerLocaleData(zh);
         BrowserAnimationsModule,
         HttpClientModule,
         HomeModule,
+        LayoutModule,
     ],
     bootstrap: [AppComponent],
     providers: [{ provide: NZ_I18N, useValue: zh_CN }],

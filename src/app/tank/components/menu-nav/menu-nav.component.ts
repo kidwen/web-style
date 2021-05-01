@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class StyleMenuNavComponent implements OnInit {
 
+    public menuSelected: string = 'home';
+
     public links: Array<Link> = [{
-        routerLink: '/',
+        routerLink: '',
         name: 'home',
     }, {
         routerLink: '/rxjs',

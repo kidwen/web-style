@@ -1,3 +1,25 @@
 :host(style-main) {
-    height: auto;
+    margin-top: 56px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    mat-sidenav-container {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+        div {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            display: block;
+            z-index: 3;
+            visibility: hidden;
+            color: rgba(0, 0, 0, 0.87);
+        }
+    }
 }

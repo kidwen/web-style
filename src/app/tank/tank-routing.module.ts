@@ -12,7 +12,10 @@ const routes: Routes = [{
     path: '',
     component: MainComponent,
     children: [{
-        path: '', redirectTo: 'home', pathMatch: 'full',
+        path: '', redirectTo: 'docs', pathMatch: 'full',
+    }, {
+        path: 'doc',
+        component: MainComponent,
     },
     ...lazyModules, {
         path: '404',

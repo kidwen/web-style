@@ -11,7 +11,7 @@ getTestBed().initTestEnvironment(
     BrowserDynamicTestingModule,
     platformBrowserDynamicTesting(),
 );
-// tslint:disable-next-line: no-unsafe-any
+// eslint-disable-next-line 
 const context: any = require.context('./', true, /\.spec\.ts$/);
-// tslint:disable-next-line: no-unsafe-any
+// eslint-disable-next-line
 context.keys().map(context);

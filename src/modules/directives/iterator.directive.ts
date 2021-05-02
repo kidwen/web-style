@@ -46,7 +46,7 @@ export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> imple
     }
 }
 
-// tslint:disable-next-line: max-classes-per-file
+// eslint-disable-next-line max-classes-per-file
 class IteratorContext<T, U extends NgIterable<T>> {
     public odd?: boolean;
 

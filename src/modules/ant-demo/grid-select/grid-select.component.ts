@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'selector-name',
+    selector: 'style-selector-name',
     templateUrl: './grid-select.component.html',
     styleUrls: ['./grid-select.component.scss'],
 })

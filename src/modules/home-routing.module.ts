@@ -13,7 +13,7 @@ const routes: Routes = [
     { path: 'position', component: PositionComponent },
     { path: 'css', component: CssStyleComponent },
     { path: 'animate', component: AnimateComponent },
-    { path: 'ant', component: GridSelectComponent },
+    { path: 'ant-grid', component: GridSelectComponent },
 ];
 
 @NgModule({

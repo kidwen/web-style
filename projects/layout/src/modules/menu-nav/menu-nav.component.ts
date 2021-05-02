@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./menu-nav.component.scss'],
 })
 
-export class StyleMenuNavComponent implements OnInit {
+export class MenuNavComponent implements OnInit {
 
     public menuSelected: string = 'home';
 
@@ -25,6 +25,9 @@ export class StyleMenuNavComponent implements OnInit {
     }, {
         routerLink: 'animate',
         name: 'animate',
+    }, {
+        routerLink: '/ant-grid',
+        name: 'ant-grid',
     }, {
         routerLink: '404',
         name: '404',

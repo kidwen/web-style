@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-fount.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const lazyModules: Routes = [{
     path: '',
@@ -10,17 +11,31 @@ const lazyModules: Routes = [{
 
 const routes: Routes = [{
     path: '',
+    component: WelcomeComponent,
+    children: [
+        {
+            path: '',
+            redirectTo: 'docs',
+            pathMatch: 'full',
+        },
+        ...lazyModules, {
+            path: '404',
+            component: NotFoundComponent,
+        }
+    ],
+}, {
+    path: 'demos',
     component: MainComponent,
-    children: [{
-        path: '', redirectTo: 'docs', pathMatch: 'full',
-    }, {
-        path: 'doc',
-        component: MainComponent,
-    },
-    ...lazyModules, {
-        path: '404',
-        component: NotFoundComponent,
-    }],
+    children: [
+        ...lazyModules, {
+            path: '404',
+            component: NotFoundComponent,
+        }
+    ],
+}, {
+    path: '404',
+    pathMatch: 'full',
+    component: NotFoundComponent,
 }, {
     path: '**',
     redirectTo: '404',

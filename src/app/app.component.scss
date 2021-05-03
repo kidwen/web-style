@@ -3,67 +3,11 @@
     flex-direction: column;
     height: 100%;
 
-    header {
-        flex: 5em 0 0;
-        line-height: 5em;
-        padding-left: 2em;
-        font-weight: bold;
-        z-index: 1;
-
-        .tools {
-            list-style: none;
-            float: right;
-            margin: 0;
-            padding: 0;
-            font-size: 14px;
-
-            >li {
-                display: inline-block;
-                margin: 0 2px;
-
-                >byz-button,
-                >byz-select {
-                    vertical-align: middle;
-                }
-            }
-        }
-
-        .ui-menu-switch {
-            display: none;
-            font-size: 4rem;
-            vertical-align: middle;
-            cursor: pointer;
+    style-navbar {
+        + * {
+            margin-top: 56px;
         }
     }
-
-    main {
-        display: flex;
-
-        >nav {
-            font-size: 14px;
-            height: 100%;
-            flex: 200px 0 0;
-            box-shadow: 0 0 5px 0 #000000;
-            overflow: auto;
-
-            a {
-                display: block;
-                padding: 1em;
-                border: 1px solid transparent;
-                line-height: calc(1em + 8px);
-                border-bottom-color: lightblue;
-            }
-        }
-
-        >article {
-            flex: 100% 1 1;
-            height: 100%;
-            padding: 1rem;
-            overflow-y: auto;
-            padding-bottom: 7.143rem;
-        }
-    }
-
     @media screen and (max-width: 40.063rem) {
         header {
             .ui-menu-switch {
@@ -76,7 +20,7 @@
         }
 
         main {
-            >nav {
+            > nav {
                 display: none;
                 position: absolute;
                 z-index: 2;

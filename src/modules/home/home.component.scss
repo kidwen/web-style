@@ -1,6 +1,5 @@
 :host(style-home) {
-    background-color: #000;
-
+    width: 100%;
     .Square {
         width: 100px;
         height: 100px;
@@ -35,8 +34,8 @@
             border: 37px solid #fff;
             border-top: 37px solid transparent;
             border-radius: 50%;
-            top: 123px;
-            left: -137px;
+            top: 166px;
+            left: -63px;
             transform: rotate(45deg);
             filter: drop-shadow(16px 0px 0 #fe2d52);
         }
@@ -73,11 +72,11 @@
         }
 
         10% {
-            transform: skewX(-4deg)translate(6px);
+            transform: skewX(-4deg) translate(6px);
         }
 
         11% {
-            transform: skewX(3deg)translate(-4px);
+            transform: skewX(3deg) translate(-4px);
         }
 
         12% {

@@ -1,8 +1,7 @@
 <div class="view-nav">
     <div class="nav-content">
         <mat-nav-list>
-            <a mat-list-item [ngClass]="{'selected': menuSelected == link.name}" *ngFor="let link of links"
-                [routerLink]="link.routerLink" (click)="menuSelected = link.name">{{ link.name }}</a>
+            <a mat-list-item [ngClass]="{'selected': menuSelected == link.name}" *ngFor="let link of links" [routerLink]="link.routerLink" (click)="menuSelected = link.text">{{ link.text }}</a>
         </mat-nav-list>
     </div>
 </div>

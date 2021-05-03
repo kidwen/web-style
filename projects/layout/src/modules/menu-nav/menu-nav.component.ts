@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatButtonProperty } from '@kidwen/layout';
 
 @Component({
     selector: 'style-menu-nav',
@@ -6,39 +7,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./menu-nav.component.scss'],
 })
 
-export class MenuNavComponent implements OnInit {
+export class MenuNavComponent {
 
-    public menuSelected: string = 'home';
+    @Input()
+    public menuSelected?: string;
 
-    public links: Array<Link> = [{
-        routerLink: '',
-        name: 'home',
-    }, {
-        routerLink: '/rxjs',
-        name: 'rxjs',
-    }, {
-        routerLink: 'position',
-        name: 'position',
-    }, {
-        routerLink: '/css',
-        name: 'css',
-    }, {
-        routerLink: 'animate',
-        name: 'animate',
-    }, {
-        routerLink: '/ant-grid',
-        name: 'ant-grid',
-    }, {
-        routerLink: '404',
-        name: '404',
-    }];
-
-    public ngOnInit(): void {
-        return;
-    }
+    @Input()
+    public links?: Array<MatButtonProperty>;
 }
 
-interface Link {
-    routerLink: string;
-    name: string;
-}

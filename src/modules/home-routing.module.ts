@@ -8,7 +8,7 @@ import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
 const routes: Routes = [
-    { path: '', pathMatch: 'full', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'rxjs', component: RxjsComponent },
     { path: 'position', component: PositionComponent },
     { path: 'css', component: CssStyleComponent },

@@ -1,8 +1,11 @@
 <mat-sidenav-container>
     <div class="mat-drawer-backdrop"></div>
     <mat-sidenav-content cdkscrollable class="mat-drawer-content mat-sidenav-content">
-        <style-menu-nav></style-menu-nav>
-
+        <div class="docs-component-sidenav-inner-content">
+            <main class="docs-component-sidenav-body-content">
+                <style-menu-nav [links]="links" [menuSelected]="'home'"></style-menu-nav>
+                <router-outlet></router-outlet>
+            </main>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
-

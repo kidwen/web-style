@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatButtonProperty } from '@kidwen/layout';
 
 @Component({
     selector: 'style-navbar',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent {
+
+    @Input()
+    public links?: Array<MatButtonProperty>;
+
 }

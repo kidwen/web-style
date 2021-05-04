@@ -27,6 +27,11 @@ const routes: Routes = [{
     path: 'demos',
     component: MainComponent,
     children: [
+        {
+            path: '',
+            redirectTo: 'home',
+            pathMatch: 'full',
+        },
         ...lazyModules, {
             path: '404',
             component: NotFoundComponent,

@@ -10,6 +10,9 @@ export class AppComponent {
     public title: string = 'style-app';
 
     public links: Array<MatButtonProperty> = [{
+        routerLink: '',
+        text: 'Welcome'
+    }, {
         routerLink: '/demos',
         text: 'Demos',
     }, {
@@ -19,7 +22,4 @@ export class AppComponent {
 
     public openSideMenu: boolean = false;
 
-    public hideSideMenu(): void {
-        this.openSideMenu = false;
-    }
 }

@@ -13,6 +13,24 @@
             display: flex;
             flex-direction: column;
             flex: 1;
+            .component-page-header {
+                display: flex;
+                align-items: center;
+            }
+            .docs-primary-header {
+                background-color: #3f51b5;
+                padding-left: 20px;
+                h1 {
+                    color: #ffffff;
+                    font-weight: 300;
+                    margin: 0;
+                    padding: 28px 8px;
+                    font-size: 20px;
+                }
+            }
+            h1 {
+                outline: none;
+            }
             main.docs-component-sidenav-body-content {
                 display: flex;
                 flex: 1 1 auto;

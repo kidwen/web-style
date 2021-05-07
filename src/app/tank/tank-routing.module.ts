@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IntroComponent } from './components/intro/intro.component';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-fount.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -29,8 +30,12 @@ const routes: Routes = [{
     children: [
         {
             path: '',
-            redirectTo: 'home',
+            redirectTo: 'intro',
             pathMatch: 'full',
+        },
+        {
+            path: 'intro',
+            component: IntroComponent,
         },
         ...lazyModules, {
             path: '404',

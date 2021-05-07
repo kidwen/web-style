@@ -5,7 +5,9 @@
         </header>
         <main class="docs-component-sidenav-body-content">
             <style-menu-nav [links]="links" (onSelected)="onSelected($event);"></style-menu-nav>
-            <router-outlet></router-outlet>
+            <div>
+                <router-outlet></router-outlet>
+            </div>
         </main>
     </div>
 </mat-sidenav-container>

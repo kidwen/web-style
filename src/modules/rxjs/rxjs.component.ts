@@ -49,6 +49,9 @@ function task(this: SchedulerAction<number>, state: any): void {
 }
 
 function addHeight(this: SchedulerAction<number>, height: any): void {
+    if (height > 300) {
+        return;
+    }
     if (div) {
         div.style.height = `${height}px`;
         this.schedule((height as number) + 0.1);

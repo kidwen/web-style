@@ -1,9 +1,10 @@
+/* eslint-disable max-classes-per-file */
 import { Directive, DoCheck, Input, IterableChangeRecord, IterableChanges, IterableDiffer, NgIterable, TemplateRef, ViewContainerRef, ViewRef } from '@angular/core';
 
 @Directive({
     selector: '[styleForOf]',
 })
-export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> implements  DoCheck {
+export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> implements DoCheck {
     @Input('styleForOf')
     public dataSource: Array<any> = new Array<any>();
 
@@ -12,7 +13,9 @@ export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> imple
     public constructor(
         private container: ViewContainerRef,
         private template: TemplateRef<any>,
-    ) { }
+    ) {
+        return;
+    }
 
     public ngDoCheck(): void {
         if (this.differ) {

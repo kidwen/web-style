@@ -37,9 +37,13 @@ export class MainComponent implements OnDestroy {
         private router: Router,
     ) {
         this.sub = this.router.events.pipe(
-            filter((e): e is NavigationEnd => e instanceof NavigationEnd),
+            filter((e): e is NavigationEnd => {
+                return e instanceof NavigationEnd;
+            }),
         ).subscribe(e => {
-            this.selectedMenu = this.links.find(l => l.routerLink == e.url)?.text ?? this.selectedMenu;
+            this.selectedMenu = this.links.find(l => {
+                return l.routerLink == e.url;
+            })?.text ?? this.selectedMenu;
         });
     }
 

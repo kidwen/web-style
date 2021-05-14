@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './navbar.component';
+import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar.component';
 
 @NgModule({
     imports: [

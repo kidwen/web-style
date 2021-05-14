@@ -7,7 +7,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const lazyModules: Routes = [{
     path: '',
-    loadChildren: 'src/modules/home.module#HomeModule',
+    loadChildren: () => import('src/modules/home.module').then(m => m.HomeModule),
 }];
 
 const routes: Routes = [{

@@ -33,12 +33,17 @@
                             }
                         ],
                         "styles": [
-                            "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+                            "@angular/material/prebuilt-themes/indigo-pink.css",
                             "src/theme.less",
-                            "src/styles.scss",
-                            "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+                            "src/styles.scss"
                         ],
-                        "scripts": []
+                        "scripts": [],
+                        "vendorChunk": true,
+                        "extractLicenses": false,
+                        "buildOptimizer": false,
+                        "sourceMap": true,
+                        "optimization": false,
+                        "namedChunks": true
                     },
                     "configurations": {
                         "production": {
@@ -51,7 +56,6 @@
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "aot": true,
                             "extractLicenses": true,
@@ -69,19 +73,24 @@
                                     "maximumError": "10kb"
                                 }
                             ]
-                        }
-                    }
+                        },
+                        "development": {}
+                    },
+                    "defaultConfiguration": "production"
                 },
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "style-app:build"
                     },
                     "configurations": {
                         "production": {
                             "browserTarget": "style-app:build:production"
+                        },
+                        "development": {
+                            "browserTarget": "style-app:build:development"
                         }
-                    }
+                    },
+                    "defaultConfiguration": "development"
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -115,8 +124,10 @@
                     "configurations": {
                         "production": {
                             "tsConfig": "projects/layout/tsconfig.lib.prod.json"
-                        }
-                    }
+                        },
+                        "development": {}
+                    },
+                    "defaultConfiguration": "production"
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",

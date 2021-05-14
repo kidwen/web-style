@@ -26,9 +26,6 @@ export class MainComponent implements OnDestroy {
     }, {
         routerLink: '/demos/animate',
         text: 'Animate',
-    }, {
-        routerLink: '/demos/ant-grid',
-        text: 'Ant-grid',
     }];
 
     public selectedMenu: string = 'Intro';

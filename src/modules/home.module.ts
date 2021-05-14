@@ -1,11 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzGridModule } from 'ng-zorro-antd/grid';
-import { NzSelectModule } from 'ng-zorro-antd/select';
 import { AnimateComponent } from './animate/animate.component';
-import { GridSelectComponent } from './ant-demo/grid-select/grid-select.component';
 import { CssStyleComponent } from './css-style/css-style.component';
 import { directives } from './directives';
 import { HomeRoutingModule } from './home-routing.module';
@@ -18,9 +14,6 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         CommonModule,
         HomeRoutingModule,
         FormsModule,
-        NzGridModule,
-        NzButtonModule,
-        NzSelectModule,
     ],
     declarations: [
         AnimateComponent,
@@ -28,7 +21,6 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         RxjsComponent,
         PositionComponent,
         CssStyleComponent,
-        GridSelectComponent,
         ...directives,
     ],
 })

@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { MatButtonProperty } from '@kidwen/layout';
 
 @Component({
-    selector: 'style-navbar',
+    selector: 'lib-navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
 })

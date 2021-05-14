@@ -4,20 +4,20 @@ import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 @Component({
-    selector: 'style-menu-nav',
+    selector: 'lib-menu-nav',
     templateUrl: './menu-nav.component.html',
     styleUrls: ['./menu-nav.component.scss'],
 })
 
 export class MenuNavComponent implements AfterContentInit, OnDestroy {
-
-    public menuSelected?: string;
-
     @Input()
     public links?: Array<MatButtonProperty>;
 
     @Output()
+    // eslint-disable-next-line @angular-eslint/prefer-output-readonly
     public onSelected: EventEmitter<string> = new EventEmitter<string>();
+
+    public menuSelected?: string;
 
     private url?: string;
 
@@ -27,14 +27,18 @@ export class MenuNavComponent implements AfterContentInit, OnDestroy {
         private router: Router,
     ) {
         this.sub = this.router.events.pipe(
-            filter((e): e is NavigationEnd => e instanceof NavigationEnd),
+            filter((e): e is NavigationEnd => {
+                return e instanceof NavigationEnd;
+            }),
         ).subscribe(e => {
             this.url = e.url;
         });
     }
 
     public ngAfterContentInit(): void {
-        let link = this.links?.find(link => link.routerLink == this.url);
+        let link = this.links?.find(l => {
+            return l.routerLink == this.url;
+        });
         this.menuSelected = link?.text;
     }
 

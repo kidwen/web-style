@@ -7,7 +7,11 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const lazyModules: Routes = [{
     path: '',
-    loadChildren: () => import('src/modules/home.module').then(m => m.HomeModule),
+    loadChildren: async () => {
+        return import('src/modules/home.module').then(m => {
+            return m.HomeModule;
+        });
+    },
 }];
 
 const routes: Routes = [{
@@ -22,7 +26,7 @@ const routes: Routes = [{
         ...lazyModules, {
             path: '404',
             component: NotFoundComponent,
-        }
+        },
     ],
 }, {
     path: 'demos',
@@ -40,7 +44,7 @@ const routes: Routes = [{
         ...lazyModules, {
             path: '404',
             component: NotFoundComponent,
-        }
+        },
     ],
 }, {
     path: '404',

@@ -8,11 +8,10 @@ let div: HTMLDivElement | null = null;
     styleUrls: ['./rxjs.component.scss'],
 })
 export class RxjsComponent implements OnInit, OnDestroy {
-    public divContent?: string;
+    @ViewChild('animal', { static: true })
+    public animalDiv?: ElementRef; public divContent?: string;
     public sub$?: Subscription;
     public animal$?: Subscription;
-    @ViewChild('animal', { static: true })
-    public animalDiv?: ElementRef;
 
     public ngOnInit(): void {
         if (this.animalDiv) {
@@ -20,6 +19,7 @@ export class RxjsComponent implements OnInit, OnDestroy {
         }
         this.animal$ = animationFrameScheduler.schedule(addHeight, 0, 0);
         let s: any = (sProp: string): void => {
+            // eslint-disable-next-line no-console
             console.info(sProp);
         };
     }
@@ -44,7 +44,7 @@ export class RxjsComponent implements OnInit, OnDestroy {
 }
 
 function task(this: SchedulerAction<number>, state: any): void {
-    console.info(state);
+    // eslint-disable-next-line no-invalid-this
     this.schedule((state as number) + 1, 1000); // `this` references currently executing Action, which we reschedule with new state and delay
 }
 
@@ -54,6 +54,7 @@ function addHeight(this: SchedulerAction<number>, height: any): void {
     }
     if (div) {
         div.style.height = `${height}px`;
+        // eslint-disable-next-line no-invalid-this
         this.schedule((height as number) + 0.1);
     }
 }

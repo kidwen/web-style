@@ -1,3 +1,8 @@
+// Error: node_modules/@types/eslint/index.d.ts:302:41
+// - error TS2724: '"node_modules/@types/estree/index"' has no exported member named 'ChainExpression'. Did you mean 'ThisExpression'?
+// Error: node_modules/@types/eslint/index.d.ts:325:42
+// - error TS2694: Namespace '"node_modules/@types/estree/index"' has no exported member 'ImportExpression'.
+// so add skipLibCheck to skip the library check
 {
     "compilerOptions": {
         "baseUrl": "./",
@@ -13,6 +18,7 @@
         "noImplicitAny": true,
         "noImplicitThis": true,
         "strict": true,
+        "skipLibCheck": true,
         "importHelpers": true,
         "target": "es2015",
         "typeRoots": [

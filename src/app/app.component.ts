@@ -11,7 +11,7 @@ export class AppComponent {
 
     public links: Array<MatButtonProperty> = [{
         routerLink: '',
-        text: 'Welcome'
+        text: 'Welcome',
     }, {
         routerLink: '/demos',
         text: 'Demos',

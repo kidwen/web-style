@@ -1,7 +1,7 @@
 {
-  "root": true,
+  "extends": "../../.eslintrc.json",
   "ignorePatterns": [
-    "projects/**/*"
+    "!**/*"
   ],
   "overrides": [
     {
@@ -10,16 +10,11 @@
       ],
       "parserOptions": {
         "project": [
-          "tsconfig.json",
-          "e2e/tsconfig.json"
+          "projects/layout/tsconfig.lib.json",
+          "projects/layout/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },
-      "extends": [
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
-        "plugin:@angular-eslint/template/process-inline-templates"
-      ],
       "plugins": [
         "eslint-plugin-no-null",
         "eslint-plugin-unicorn"
@@ -38,7 +33,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "",
+            "prefix": "lib",
             "style": "kebab-case"
           }
         ],
@@ -55,7 +50,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "",
+            "prefix": "lib",
             "style": "camelCase"
           }
         ],
@@ -251,9 +246,6 @@
     {
       "files": [
         "*.html"
-      ],
-      "extends": [
-        "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {
         "@angular-eslint/template/accessibility-alt-text": "off",

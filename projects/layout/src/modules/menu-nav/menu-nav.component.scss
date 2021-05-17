@@ -1,7 +1,7 @@
-:host(style-menu-nav) {
+:host(lib-menu-nav) {
     .nav-content {
         width: 240px;
-        height: 100vh;
+        height: calc(100vh - 56px);
         overflow: auto;
         border-right: 1px solid rgba(0, 0, 0, 0.12);
         mat-nav-list {

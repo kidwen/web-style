@@ -4,7 +4,7 @@
             <h1>{{ selectedMenu }}</h1>
         </header>
         <main class="docs-component-sidenav-body-content">
-            <style-menu-nav [links]="links" (onSelected)="onSelected($event);"></style-menu-nav>
+            <lib-menu-nav [links]="links" (onSelected)="onSelected($event);"></lib-menu-nav>
             <div>
                 <router-outlet></router-outlet>
             </div>

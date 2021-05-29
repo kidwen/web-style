@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { LayoutModule, MenuNavModule, NavbarModule } from '@kidwen/layout';
+import { FooterModule, LayoutModule, MenuNavModule, NavbarModule } from '@kidwen/layout';
 import { HomeModule } from '../modules/home.module';
 import { AppComponent } from './app.component';
 import { TankModule } from './tank/tank.module';
@@ -23,6 +23,7 @@ registerLocaleData(zh);
         BrowserAnimationsModule,
         HttpClientModule,
         HomeModule,
+        FooterModule,
         LayoutModule,
         NavbarModule,
         MenuNavModule,

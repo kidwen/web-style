@@ -2,7 +2,7 @@
     "name": "style-app",
     "version": "0.0.0",
     "scripts": {
-        "ng": "ng",
+        "ng": "ng --version",
         "start": "ng serve --hmr",
         "build": "ng build",
         "lint": "ng lint"

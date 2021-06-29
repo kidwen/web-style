@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MatButtonProperty } from '@kidwen/layout';
+import { MatButtonProperty } from '../../model/mat-button.model';
 
 @Component({
     selector: 'lib-navbar',

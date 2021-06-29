@@ -10,8 +10,8 @@ import 'zone.js/testing';
 
 declare const require: {
     context(path: string, deep?: boolean, filter?: RegExp): {
-        keys(): Array<string>;
         <T>(id: string): T;
+        keys(): Array<string>;
     };
 };
 

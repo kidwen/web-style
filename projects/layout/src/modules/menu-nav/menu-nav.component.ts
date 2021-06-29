@@ -1,8 +1,8 @@
-import { Component, EventEmitter, Input, Output, AfterContentInit, OnDestroy } from '@angular/core';
+import { AfterContentInit, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { MatButtonProperty } from '../../model/mat-button.model';
 @Component({
     selector: 'lib-menu-nav',
     templateUrl: './menu-nav.component.html',
@@ -14,8 +14,7 @@ export class MenuNavComponent implements AfterContentInit, OnDestroy {
     public links?: Array<MatButtonProperty>;
 
     @Output()
-    // eslint-disable-next-line @angular-eslint/prefer-output-readonly
-    public onSelected: EventEmitter<string> = new EventEmitter<string>();
+    public readonly onSelected: EventEmitter<string> = new EventEmitter<string>();
 
     public menuSelected?: string;
 
@@ -51,4 +50,3 @@ export class MenuNavComponent implements AfterContentInit, OnDestroy {
         this.sub?.unsubscribe();
     }
 }
-

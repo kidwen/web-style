@@ -5,6 +5,14 @@
 */
 {
     "files": [],
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@kidwen/layout": [
+                "projects/layout/src/public-api"
+            ]
+        }
+    },
     "references": [
         {
             "path": "./tsconfig.app.json"

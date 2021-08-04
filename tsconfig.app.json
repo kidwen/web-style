@@ -11,7 +11,8 @@
         "declaration": false,
         "downlevelIteration": true,
         "experimentalDecorators": true,
-        "module": "esnext",
+        "emitDecoratorMetadata": true,
+        "module": "es2020",
         "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
         "noImplicitReturns": true,
@@ -19,7 +20,10 @@
         "noImplicitThis": true,
         "skipLibCheck": true,
         "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
         "target": "es2015",
+        "esModuleInterop": true,
+        "noUnusedLocals": true,
         "typeRoots": [
             "node_modules/@types"
         ],

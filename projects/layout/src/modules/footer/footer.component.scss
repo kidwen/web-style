@@ -12,12 +12,13 @@
             .docs-footer-angular-logo {
                 height: 50px;
                 font-size: 12px;
+                border-radius: 50%;
             }
             span {
                 display: inline-block;
                 line-height: 50px;
                 margin: 0 40px;
-                vertical-align: bottom;
+                vertical-align: top;
                 a {
                     font-size: 16px;
                     padding: 0;

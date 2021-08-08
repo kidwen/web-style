@@ -1,4 +1,7 @@
 :host(style-welcome) {
     margin-top: 56px;
     height: 100vh;
+    main {
+        min-height: calc(100vh - 56px - 96px);
+    }
 }

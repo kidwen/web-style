@@ -1,4 +1,8 @@
 :host(lib-menu-nav) {
+    .view-nav {
+        position: sticky;
+        top: 0;
+    }
     .nav-content {
         width: 240px;
         height: calc(100vh - 56px);

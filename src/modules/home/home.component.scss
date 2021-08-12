@@ -20,11 +20,11 @@
         position: relative;
         width: 37px;
         height: 218px;
-        margin: 100px auto;
+        margin: 200px auto;
         z-index: 1;
         background: #fff;
         filter: drop-shadow(-10px -10px 0 #24f6f0) contrast(150%) brightness(110%);
-        box-shadow: 11.6px 10px 0 0 #fe2d52;
+        box-shadow: 11.6px 0px 0 0 #fe2d52;
         z-index: 10;
         animation: move 5s infinite ease-in;
         top: -60px;
@@ -37,8 +37,8 @@
             border: 37px solid #fff;
             border-top: 37px solid transparent;
             border-radius: 50%;
-            top: 166px;
-            left: -63px;
+            top: 119px;
+            left: -137px;
             transform: rotate(45deg);
             filter: drop-shadow(16px 0px 0 #fe2d52);
         }
@@ -52,9 +52,9 @@
             border-right: 30px solid transparent;
             border-top: 30px solid transparent;
             border-left: 30px solid transparent;
-            top: -100px;
-            right: -172px;
-            border-radius: 100%;
+            top: -99px;
+            right: -171px;
+            border-radius: 50%;
             transform: rotate(45deg);
             z-index: -10;
             filter: drop-shadow(14px 0 0 #fe2d52);

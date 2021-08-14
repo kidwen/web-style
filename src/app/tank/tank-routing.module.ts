@@ -23,10 +23,6 @@ const routes: Routes = [{
             redirectTo: 'docs',
             pathMatch: 'full',
         },
-        ...lazyModules, {
-            path: '404',
-            component: NotFoundComponent,
-        },
     ],
 }, {
     path: 'demos',

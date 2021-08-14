@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
 import { AnimateComponent } from './animate/animate.component';
+import { CenterComponent } from './center/center.component';
 import { CssStyleComponent } from './css-style/css-style.component';
 import { directives } from './directives';
 import { HomeRoutingModule } from './home-routing.module';
@@ -14,13 +16,15 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         CommonModule,
         HomeRoutingModule,
         FormsModule,
+        MatTabsModule,
     ],
     declarations: [
         AnimateComponent,
-        HomeComponent,
-        RxjsComponent,
-        PositionComponent,
+        CenterComponent,
         CssStyleComponent,
+        HomeComponent,
+        PositionComponent,
+        RxjsComponent,
         ...directives,
     ],
 })

@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AnimateComponent } from './animate/animate.component';
+import { CenterComponent } from './center/center.component';
 import { CssStyleComponent } from './css-style/css-style.component';
 import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
 const routes: Routes = [
-    { path: 'shadow', component: HomeComponent },
-    { path: 'rxjs', component: RxjsComponent },
-    { path: 'position', component: PositionComponent },
-    { path: 'css', component: CssStyleComponent },
     { path: 'animate', component: AnimateComponent },
+    { path: 'position', component: PositionComponent },
+    { path: 'center', component: CenterComponent },
+    { path: 'css', component: CssStyleComponent },
+    { path: 'rxjs', component: RxjsComponent },
+    { path: 'shadow', component: HomeComponent },
 ];
 
 @NgModule({

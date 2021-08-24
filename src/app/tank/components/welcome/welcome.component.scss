@@ -96,6 +96,9 @@
     .docs-link {
         display: inline-flex;
         align-items: center;
+        &:hover {
+            color: rgba($color: #000000, $alpha: 0.87);
+        }
     }
     @media (max-width: 1200px) {
         .docs-header-background {

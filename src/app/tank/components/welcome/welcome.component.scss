@@ -105,4 +105,20 @@
             height: 330px;
         }
     }
+    @media (max-width: 850px) {
+        .docs-homepage-row-column {
+            width: 100%;
+        }
+    }
+    @media (max-width: 720px) {
+        .docs-homepage-row {
+            margin: 15px 0;
+        }
+        .docs-introduction {
+            flex-direction: column;
+        }
+        .docs-homepage-carousel-row {
+            margin: 15px 0;
+        }
+    }
 }

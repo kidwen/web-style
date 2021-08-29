@@ -3,8 +3,13 @@
     "extends": "../../tsconfig.json",
     "compilerOptions": {
         "outDir": "../../out-tsc/spec",
+        "experimentalDecorators": true,
         "types": [
             "jasmine"
+        ],
+        "lib": [
+            "dom",
+            "es2018"
         ]
     },
     "files": [

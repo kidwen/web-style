@@ -19,3 +19,9 @@ body {
 a.docs-link {
     color: rgba($color: #000000, $alpha: 0.54);
 }
+
+.docs-homepage-featured-components .docs-featured-components-carousel-item {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+}

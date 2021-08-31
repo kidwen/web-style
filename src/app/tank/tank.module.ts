@@ -6,7 +6,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { FooterModule, MenuNavModule } from '@kidwen/layout';
+import { FooterModule, MenuNavModule, CarouselModule } from '@kidwen/layout';
 import { IntroComponent } from './components/intro/intro.component';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-fount.component';
@@ -25,6 +25,7 @@ import { TankRoutingModule } from './tank-routing.module';
         MatButtonModule,
         MatDividerModule,
         MatIconModule,
+        CarouselModule,
     ],
     declarations: [
         MainComponent,

@@ -2,14 +2,9 @@
     <mat-icon>navigate_before</mat-icon>
 </button>
 
-<div role="region" class="docs-carousel-content-wrapper">
-    <div role="list" tabindex="0" class="docs-carousel-content">
-        <a [href]="carousel.href" *ngFor="let carousel of carousels" class="carousel-item docs-featured-components-carousel-item ng-star-inserted" tabindex="-1" role="listitem">
-            <div class="docs-homepage-img-container">
-                <img role="presentation" [src]="carousel.src" alt>
-            </div>
-            {{ carousel.name }}
-        </a>
+<div class="docs-carousel-content-wrapper" role="region">
+    <div class="docs-carousel-content" role="list" tabindex="0">
+        <ng-content></ng-content>
     </div>
 
 </div>

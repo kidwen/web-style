@@ -41,7 +41,14 @@
                     <mat-icon aria-hidden="true">chevron_right</mat-icon>
                 </a>
             </div>
-            <lib-carousel></lib-carousel>
+            <lib-carousel>
+                <a routerLink="/demos/{{component.originValue}}" *ngFor="let component of components; index as i" class="carousel-item docs-featured-components-carousel-item" tabindex="-1" role="listitem">
+                    <div class="docs-homepage-img-container">
+                        <img role="presentation" [src]="component" alt>
+                    </div>
+                    {{ component.name }}
+                </a>
+            </lib-carousel>
         </div>
         <mat-divider role="separator"></mat-divider>
         <div class="docs-homepage-guides docs-homepage-carousel-row" style="height: 200px;"></div>

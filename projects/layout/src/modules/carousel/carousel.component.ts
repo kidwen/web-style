@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'lib-carousel',
@@ -6,15 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
     styleUrls: ['./carousel.component.scss'],
 })
 
-export class CarouselComponent implements OnInit {
-    @Input()
-    public carousels: Array<any> = new Array<any>();
+export class CarouselComponent {
 
-    public ngOnInit() {
-        this.carousels = [
-            { href: '', src: '', name: 'Input' },
-            { href: '', src: '', name: 'Input' },
-            { href: '', src: '', name: 'Input' },
-        ];
-    }
 }

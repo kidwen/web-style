@@ -41,6 +41,7 @@
                         "style": "kebab-case"
                     }
                 ],
+                "@angular-eslint/use-injectable-provided-in": "error",
                 "@angular-eslint/contextual-decorator": "error",
                 "@angular-eslint/directive-class-suffix": [
                     "error",
@@ -276,7 +277,9 @@
                 "@angular-eslint/template/no-call-expression": "error",
                 "@angular-eslint/template/no-distracting-elements": "error",
                 "@angular-eslint/template/no-positive-tabindex": "off",
-                "@angular-eslint/template/use-track-by-function": "off"
+                "@angular-eslint/template/use-track-by-function": "off",
+                "@angular-eslint/sort-ngmodule-metadata-arrays": "error",
+                "@angular-eslint/no-empty-lifecycle-method": "error"
             }
         }
     ]

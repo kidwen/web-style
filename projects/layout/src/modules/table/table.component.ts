@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'lib-table',
+    selector: 'lib-table,table[lib-table]',
     templateUrl: './table.component.html',
     styleUrls: ['./table.component.scss'],
 })

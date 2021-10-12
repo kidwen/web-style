@@ -118,7 +118,6 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "inlineStyleLanguage": "scss",
                         "tsConfig": "projects/layout/tsconfig.lib.json",
                         "project": "projects/layout/ng-package.json"
                     },

@@ -127,6 +127,7 @@
                         },
                         "development": {}
                     },
+                    "inlineStyleLanguage": "scss",
                     "defaultConfiguration": "production"
                 },
                 "test": {

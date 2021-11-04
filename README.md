@@ -1,5 +1,7 @@
 # StyleApp
 
+<img src="https://github.com/kidwen/web-style/actions/workflows/angular.yml/badge.svg" alt="Workflow status badge" loading="lazy" height="20">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server

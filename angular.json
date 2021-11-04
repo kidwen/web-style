@@ -156,7 +156,6 @@
         "defaultCollection": "@angular-eslint/schematics",
         "cache": {
             "enabled": true,
-            "path": ".cache",
             "environment": "all"
         }
     }

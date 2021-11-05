@@ -4,8 +4,8 @@
     "scripts": {
         "ng": "ng --version",
         "start": "ng serve --hmr",
-        "build": "npm run build:layout && ng build --configuration production",
-        "build:layout": "ng build layout --configuration production",
+        "build": "npm run build:layout && ng build",
+        "build:layout": "ng build layout",
         "lint": "ng lint"
     },
     "private": true,
@@ -16,7 +16,7 @@
         "@angular/compiler": "^13.0.0",
         "@angular/core": "^13.0.0",
         "@angular/forms": "^13.0.0",
-        "@angular/material": "^13.0.0",
+        "@angular/material": "^12.0.0",
         "@angular/platform-browser": "^13.0.0",
         "@angular/platform-browser-dynamic": "^13.0.0",
         "@angular/router": "^13.0.0",

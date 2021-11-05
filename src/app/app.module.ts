@@ -19,8 +19,8 @@ registerLocaleData(zh);
     imports: [
         RouterModule.forRoot([], { canceledNavigationResolution: 'computed' }),
         BrowserModule,
-        TankModule,
         BrowserAnimationsModule,
+        TankModule,
         HttpClientModule,
         HomeModule,
         FooterModule,

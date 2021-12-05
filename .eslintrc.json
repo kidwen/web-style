@@ -270,7 +270,6 @@
                     }
                 ],
                 "@angular-eslint/template/cyclomatic-complexity": "off",
-                "@angular-eslint/template/i18n": "off",
                 "@angular-eslint/template/mouse-events-have-key-events": "error",
                 "@angular-eslint/template/no-any": "error",
                 "@angular-eslint/template/no-autofocus": "error",
@@ -279,7 +278,14 @@
                 "@angular-eslint/template/no-positive-tabindex": "off",
                 "@angular-eslint/template/use-track-by-function": "off",
                 "@angular-eslint/sort-ngmodule-metadata-arrays": "error",
-                "@angular-eslint/no-empty-lifecycle-method": "error"
+                "@angular-eslint/no-empty-lifecycle-method": "error",
+                "@angular-eslint/template/i18n": "off"
+                // "@angular-eslint/template/i18n": [
+                //     "error",
+                //     {
+                //         "requireDescription": true
+                //     }
+                // ]
             }
         }
     ]

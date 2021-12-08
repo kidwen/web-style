@@ -1,9 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
     selector: 'style-not-fount',
     templateUrl: './not-fount.component.html',
     styleUrls: ['./not-fount.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NotFoundComponent implements OnInit, OnDestroy {
     public countDown: number = 5;

@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
@@ -8,6 +8,7 @@ import { filter } from 'rxjs/operators';
     selector: 'style-main',
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainComponent implements OnDestroy {
 

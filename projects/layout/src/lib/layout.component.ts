@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'lib-layout',
@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   `,
     styles: [
     ],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LayoutComponent implements OnInit {
 

@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 const components = ['animate', 'center', 'css', 'position', 'rxjs', 'shadow'];
 @Component({
     selector: 'style-welcome',
     templateUrl: './welcome.component.html',
     styleUrls: ['./welcome.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
 export class WelcomeComponent implements OnInit {

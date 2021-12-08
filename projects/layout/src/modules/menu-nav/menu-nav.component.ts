@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
+import { AfterContentInit, ChangeDetectionStrategy, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -7,6 +7,7 @@ import { MatButtonProperty } from '../../model/mat-button.model';
     selector: 'lib-menu-nav',
     templateUrl: './menu-nav.component.html',
     styleUrls: ['./menu-nav.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
 export class MenuNavComponent implements AfterContentInit, OnDestroy {

@@ -1,5 +1,5 @@
 import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'style-position',
@@ -18,6 +18,7 @@ import { Component } from '@angular/core';
             transition('* => *', animate('{{transitionParams}}')),
         ]),
     ],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PositionComponent {
     public container: HTMLDivElement | null = null;

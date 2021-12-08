@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { animationFrameScheduler, asyncScheduler, SchedulerAction, Subscription } from 'rxjs';
 
 let div: HTMLDivElement | null = null;
@@ -6,6 +6,7 @@ let div: HTMLDivElement | null = null;
     selector: 'style-rxjs',
     templateUrl: './rxjs.component.html',
     styleUrls: ['./rxjs.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RxjsComponent implements OnInit, OnDestroy {
     @ViewChild('animal', { static: true })

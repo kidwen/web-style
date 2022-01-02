@@ -13,23 +13,26 @@ import { filter } from 'rxjs/operators';
 export class MainComponent implements OnDestroy {
 
     public links: Array<MatButtonProperty> = [{
-        routerLink: '/demos/animate',
+        routerLink: './animate',
         text: 'Animate',
     }, {
-        routerLink: '/demos/center',
+        routerLink: './center',
         text: 'Center',
     }, {
-        routerLink: '/demos/css',
+        routerLink: './css',
         text: 'Css',
     }, {
-        routerLink: '/demos/position',
+        routerLink: './position',
         text: 'Position',
     }, {
-        routerLink: '/demos/rxjs',
+        routerLink: './rxjs',
         text: 'Rxjs',
     }, {
-        routerLink: '/demos/shadow',
+        routerLink: './shadow',
         text: 'Shadow',
+    }, {
+        routerLink: './change-detection',
+        text: 'ChangeDetection',
     }];
 
     public selectedMenu: string = 'Intro';

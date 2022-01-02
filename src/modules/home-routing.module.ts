@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { TableDemoComponent } from './table/table-demo.component';
+import { ParentComponent } from './chang-detection/parent/parent.component';
 
 const routes: Routes = [
     { path: 'animate', component: AnimateComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'rxjs', component: RxjsComponent },
     { path: 'shadow', component: HomeComponent },
     { path: 'table', component: TableDemoComponent },
+    { path: 'change-detection', component: ParentComponent },
 ];
 
 @NgModule({

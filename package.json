@@ -57,7 +57,7 @@
         "typescript": "^4.5.4"
     },
     "engines": {
-        "node": ">=16.10.0 <17",
+        "node": ">=16.10.0",
         "npm": "Please use yarn instead of NPM to install dependencies"
     },
     "license": "MIT"

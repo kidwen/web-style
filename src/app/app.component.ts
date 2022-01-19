@@ -23,4 +23,8 @@ export class AppComponent {
 
     public openSideMenu: boolean = false;
 
+    public constructor() {
+        localStorage.setItem('id', '123');
+    }
+
 }

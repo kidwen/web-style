@@ -12,6 +12,10 @@ export class ParentComponent {
     public user: User = { name: 'kidwen' };
 
     public changeUserName() {
-        this.user.name = 'kid-wen';
+        if (this.user.name === 'kidwen') {
+            this.user = { ...this.user, name: 'kid-wen' };
+        } else {
+            this.user = { ...this.user, name: 'kidwen' };
+        }
     }
 }

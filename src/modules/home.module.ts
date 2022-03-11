@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { TableDemoComponent } from './table/table-demo.component';
+import { CompleteComponent } from './dynamic-component/complete/complete.component';
+import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/ng-component-outlet-complete-example/ng-component-outlet-complete-example.component';
 
 @NgModule({
     imports: [
@@ -35,6 +37,8 @@ import { TableDemoComponent } from './table/table-demo.component';
         TableDemoComponent,
         ParentComponent,
         ChildComponent,
+        CompleteComponent,
+        NgComponentOutletCompleteExampleComponent,
         ...directives,
     ],
 })

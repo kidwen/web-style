@@ -33,6 +33,9 @@ export class MainComponent implements OnDestroy {
     }, {
         routerLink: './change-detection',
         text: 'ChangeDetection',
+    }, {
+        routerLink: './dynamic-component',
+        text: 'DynamicComponent',
     }];
 
     public selectedMenu: string = 'Intro';

@@ -1,0 +1,21 @@
+[NX Daemon Server] - 2024-07-29T15:36:20.606Z - Started listening on: \\.\pipe\nx\C:\Users\kidwen\AppData\Local\Temp\fd81d5e140fe9d37e914\d.sock
+[NX Daemon Server] - 2024-07-29T15:36:20.615Z - [WATCHER]: Subscribed to changes within: d:\workspace\github\frontend\web-style (native)
+[NX Daemon Server] - 2024-07-29T15:36:20.616Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-29T15:36:20.618Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-29T15:36:20.618Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-29T15:36:20.619Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-29T15:36:20.902Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-29T15:36:20.902Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-29T15:36:20.902Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-29T15:36:20.907Z - Time taken for 'loadNxPlugins' 281.56680000014603ms
+[NX Daemon Server] - 2024-07-29T15:36:21.192Z - Time taken for 'build-project-configs' 275.3338999999687ms
+[NX Daemon Server] - 2024-07-29T15:36:21.427Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-07-29T15:36:21.428Z - Time taken for 'total for creating and serializing project graph' 807.1178999999538ms
+[NX Daemon Server] - 2024-07-29T15:36:21.428Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-07-29T15:36:21.428Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 807. Response time: 2.
+[NX Daemon Server] - 2024-07-29T15:36:21.432Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-29T15:36:21.432Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-29T15:36:21.432Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-29T15:36:21.432Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-29T15:36:25.083Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-07-29T15:36:25.102Z - [WATCHER]: Stopping the watcher for d:\workspace\github\frontend\web-style (sources)

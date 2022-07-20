@@ -9,7 +9,7 @@ const lazyModules: Routes = [{
     path: '',
     loadChildren: async () => {
         return import('src/modules/home.module').then(m => {
-            return m.HomeModule;
+            return m.HomeModule as any;
         });
     },
 }];

@@ -10,9 +10,8 @@
             ],
             "parserOptions": {
                 "project": [
-                    "tsconfig.app.json"
-                ],
-                "createDefaultProgram": true
+                    "tsconfig.eslint.json"
+                ]
             },
             "extends": [
                 "plugin:@angular-eslint/ng-cli-compat",

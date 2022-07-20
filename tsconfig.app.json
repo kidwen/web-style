@@ -15,7 +15,7 @@
         "noImplicitThis": true,
         "importHelpers": true,
         "allowSyntheticDefaultImports": true,
-        "target": "es2015",
+        "target": "es2020",
         "esModuleInterop": true,
         "noUnusedLocals": true,
         "typeRoots": [

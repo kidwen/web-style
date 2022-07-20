@@ -42,5 +42,4 @@ import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/n
         ...directives,
     ],
 })
-
 export class HomeModule { }

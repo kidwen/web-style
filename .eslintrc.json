@@ -42,6 +42,7 @@
                 ],
                 "@angular-eslint/use-injectable-provided-in": "error",
                 "@angular-eslint/contextual-decorator": "error",
+                "@angular-eslint/use-lifecycle-interface": "error",
                 "@angular-eslint/directive-class-suffix": [
                     "error",
                     {
@@ -60,6 +61,11 @@
                 ],
                 "@angular-eslint/no-attribute-decorator": "error",
                 "@angular-eslint/no-forward-ref": "off",
+                "@angular-eslint/no-input-rename": "error",
+                "@angular-eslint/no-output-rename": "error",
+                "@angular-eslint/no-host-metadata-property": "error",
+                "@angular-eslint/no-inputs-metadata-property": "error",
+                "@angular-eslint/no-outputs-metadata-property": "error",
                 "@angular-eslint/no-input-prefix": [
                     "off",
                     {
@@ -81,6 +87,7 @@
                 "@angular-eslint/relative-url-prefix": "error",
                 "@angular-eslint/use-component-selector": "error",
                 "@angular-eslint/use-component-view-encapsulation": "error",
+                "@angular-eslint/use-pipe-transform-interface": "error",
                 "@angular-eslint/contextual-lifecycle": [
                     "error"
                 ],
@@ -215,6 +222,7 @@
                 "no-sparse-arrays": "error",
                 "no-template-curly-in-string": "error",
                 "no-useless-constructor": "error",
+                "@angular-eslint/no-conflicting-lifecycle": "error",
                 "no-void": "error",
                 "padding-line-between-statements": [
                     "off",
@@ -266,6 +274,7 @@
                 "@angular-eslint/template/accessibility-table-scope": "off",
                 "@angular-eslint/template/accessibility-valid-aria": "off",
                 "@angular-eslint/template/click-events-have-key-events": "off",
+                "@angular-eslint/template/accessibility-label-for": "error",
                 "@angular-eslint/template/conditional-complexity": [
                     "error",
                     {
@@ -282,6 +291,8 @@
                 "@angular-eslint/template/use-track-by-function": "off",
                 "@angular-eslint/sort-ngmodule-metadata-arrays": "error",
                 "@angular-eslint/no-empty-lifecycle-method": "error",
+                "@angular-eslint/template/no-negated-async": "error",
+                "@angular-eslint/template/banana-in-box": "error",
                 "@angular-eslint/template/i18n": "off"
                 // "@angular-eslint/template/i18n": [
                 //     "error",

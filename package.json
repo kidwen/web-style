@@ -17,7 +17,7 @@
         "@angular/core": "^14.0.6",
         "@angular/forms": "^14.0.6",
         "@angular/material": "^14.1.1",
-        "@angular/platform-browser": "^14.0.6",
+        "@angular/platform-browser": "^14.1.1",
         "@angular/platform-browser-dynamic": "^14.1.1",
         "@angular/router": "^14.0.6",
         "animate.css": "^4.1.1",

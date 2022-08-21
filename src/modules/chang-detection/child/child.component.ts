@@ -7,7 +7,6 @@ import { User } from 'src/model/user.model';
     styleUrls: ['./child.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-
 export class ChildComponent {
     @Input()
     public user: User = { name: 'kidwen' };

@@ -9,7 +9,7 @@
         "baseUrl": "./",
         "paths": {
             "@kidwen/layout": [
-                "/projects/layout/src/public-api"
+                "/projects/layout/src/public-api.ts"
             ]
         }
     },

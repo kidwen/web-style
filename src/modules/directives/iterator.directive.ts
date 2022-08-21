@@ -6,12 +6,13 @@ import { Directive, DoCheck, Input, IterableChangeRecord, IterableChanges, Itera
 })
 export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> implements DoCheck {
     @Input('styleForOf')
-    public dataSource: Array<any> = new Array<any>();
+    public dataSource: NgIterable<T> = new Array<T>();
 
     private differ: IterableDiffer<T> | null = null;
 
     public constructor(
         private container: ViewContainerRef,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         private template: TemplateRef<any>,
     ) {
         return;
@@ -29,6 +30,7 @@ export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> imple
     private updateContext(changes: IterableChanges<T>): void {
         const insertTuples: Array<IteratorContext<T, U>> = [];
         changes.forEachOperation(
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (item: IterableChangeRecord<any>, adjustedPreviousIndex: number | null, currentIndex: number | null) => {
                 if (item.previousIndex === null) {
                     this.container.createEmbeddedView(
@@ -49,7 +51,7 @@ export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> imple
     }
 }
 
-// eslint-disable-next-line max-classes-per-file
+// eslint-disable-next-line max-classes-per-file, @typescript-eslint/no-unused-vars
 class IteratorContext<T, U extends NgIterable<T>> {
     public odd?: boolean;
 
@@ -58,6 +60,7 @@ class IteratorContext<T, U extends NgIterable<T>> {
     public first?: boolean;
 
     public constructor(
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         public $implicit: any,
         public index: number,
     ) {

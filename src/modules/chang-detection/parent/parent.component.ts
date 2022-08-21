@@ -7,7 +7,6 @@ import { User } from 'src/model/user.model';
     styleUrls: ['./parent.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-
 export class ParentComponent {
     public user: User = { name: 'kidwen' };
 

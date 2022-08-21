@@ -7,11 +7,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const lazyModules: Routes = [{
     path: '',
-    loadChildren: async () => {
-        return import('src/modules/home.module').then(m => {
-            return m.HomeModule as any;
-        });
-    },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    loadChildren: async () => import('src/modules/home.module').then(m => m.HomeModule as any),
 }];
 
 const routes: Routes = [{

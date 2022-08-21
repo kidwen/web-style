@@ -1,4 +1,4 @@
-import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
@@ -23,7 +23,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class PositionComponent {
     public container: HTMLDivElement | null = null;
 
-    public onAnimationStart(event: AnimationEvent): void {
+    public onAnimationStart(): void {
         // switch (event.toState) {
         //     case 'visible':
         //         this.container = event.element as HTMLDivElement;

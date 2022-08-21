@@ -15,6 +15,7 @@ export class MenuNavComponent implements AfterContentInit, OnDestroy {
     public links?: Array<MatButtonProperty>;
 
     @Output()
+    // eslint-disable-next-line @angular-eslint/no-output-on-prefix
     public readonly onSelected: EventEmitter<string> = new EventEmitter<string>();
 
     public menuSelected?: string;
@@ -27,18 +28,14 @@ export class MenuNavComponent implements AfterContentInit, OnDestroy {
         private router: Router,
     ) {
         this.sub = this.router.events.pipe(
-            filter((e): e is NavigationEnd => {
-                return e instanceof NavigationEnd;
-            }),
+            filter((e): e is NavigationEnd => e instanceof NavigationEnd),
         ).subscribe(e => {
             this.url = e.url;
         });
     }
 
     public ngAfterContentInit(): void {
-        let link = this.links?.find(l => {
-            return l.routerLink == this.url;
-        });
+        let link = this.links?.find(l => l.routerLink == this.url);
         this.menuSelected = link?.text;
     }
 

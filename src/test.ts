@@ -5,6 +5,7 @@ import {
 } from '@angular/platform-browser-dynamic/testing';
 import 'zone.js/testing';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare const require: any;
 
 getTestBed().initTestEnvironment(

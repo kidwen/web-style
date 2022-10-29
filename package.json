@@ -34,7 +34,7 @@
         "@angular-eslint/schematics": "^14.1.2",
         "@angular-eslint/template-parser": "^14.1.2",
         "@angular/cli": "^14.2.7",
-        "@angular/compiler-cli": "^14.2.7",
+        "@angular/compiler-cli": "^14.2.8",
         "@angular/language-service": "^14.2.8",
         "@kidwen/eslint-config-angular": "^0.0.1",
         "@types/estree": "^1.0.0",

@@ -50,7 +50,7 @@
         "eslint-plugin-no-null": "latest",
         "eslint-plugin-prefer-arrow": "latest",
         "eslint-plugin-unicorn": "^44.0.2",
-        "jasmine-core": "^4.4.0",
+        "jasmine-core": "^4.5.0",
         "jasmine-spec-reporter": "^7.0.0",
         "ng-packagr": "^14.2.2",
         "protractor": "^7.0.0",

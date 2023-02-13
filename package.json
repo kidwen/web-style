@@ -44,7 +44,7 @@
         "@typescript-eslint/eslint-plugin": "^5.45.0",
         "@typescript-eslint/parser": "^5.43.0",
         "codelyzer": "^6.0.1",
-        "eslint": "^8.26.0",
+        "eslint": "^8.34.0",
         "eslint-plugin-import": "^2.25.3",
         "eslint-plugin-jsdoc": "latest",
         "eslint-plugin-no-null": "latest",

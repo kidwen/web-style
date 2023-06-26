@@ -45,7 +45,7 @@
         "@typescript-eslint/parser": "5.43.0",
         "codelyzer": "^6.0.1",
         "eslint": "^8.28.0",
-        "jasmine-core": "^4.5.0",
+        "jasmine-core": "^5.0.1",
         "jasmine-spec-reporter": "^7.0.0",
         "ng-packagr": "^15.2.2",
         "protractor": "^7.0.0",

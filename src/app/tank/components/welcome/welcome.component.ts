@@ -11,7 +11,7 @@ const components = ['animate', 'center', 'css', 'position', 'rxjs', 'shadow'];
 export class WelcomeComponent implements OnInit {
     public components: Array<{ name: string; originValue: string }> = new Array<{ name: string; originValue: string }>();
 
-    public ngOnInit() {
+    public ngOnInit(): void {
         this.components = components.map(com => ({ name: `${com[0].toUpperCase()}${com.slice(1)}`, originValue: com }));
     }
 }

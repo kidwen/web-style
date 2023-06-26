@@ -10,7 +10,7 @@ import { User } from 'src/model/user.model';
 export class ParentComponent {
     public user: User = { name: 'kidwen' };
 
-    public changeUserName() {
+    public changeUserName(): void {
         if (this.user.name === 'kidwen') {
             this.user = { ...this.user, name: 'kid-wen' };
         } else {

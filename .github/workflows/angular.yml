@@ -38,4 +38,4 @@ jobs:
             - name: Lint Code
               run: yarn lint
             - name: Build App
-              run: yarn build --if-present
+              run: yarn build

@@ -26,7 +26,7 @@ jobs:
               with:
                   # npm cache files are stored in `~/.npm` on linux/macOS
                   path: ~/npm
-                  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+                  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
                   restore-keys: |
                       ${{ runner.os }}-build-${{ env.cache-name }}-
                       ${{ runner.os }}-build-
@@ -34,8 +34,8 @@ jobs:
             - name: Authenticate with GitHub package registry
               run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
             - name: Install Dependencies
-              run: npm i
+              run: yarn
             - name: Lint Code
-              run: npm run lint
+              run: yarn lint
             - name: Build App
-              run: npm run build --if-present
+              run: yarn build --if-present

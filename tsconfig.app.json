@@ -15,7 +15,7 @@
         "noImplicitThis": true,
         "importHelpers": true,
         "allowSyntheticDefaultImports": true,
-        "target": "es2020",
+        "target": "ES2022",
         "esModuleInterop": true,
         "noUnusedLocals": true,
         "typeRoots": [
@@ -29,7 +29,8 @@
             "@kidwen/layout": [
                 "projects/layout/src/public-api.ts"
             ]
-        }
+        },
+        "useDefineForClassFields": false
     },
     "files": [
         "src/main.ts",

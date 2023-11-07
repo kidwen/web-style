@@ -39,7 +39,7 @@
         "@kidwen/eslint-config-angular": "^16.1.1",
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^4.3.5",
-        "@types/jasminewd2": "^2.0.8",
+        "@types/jasminewd2": "^2.0.13",
         "@types/node": "^20.5.0",
         "@typescript-eslint/eslint-plugin": "^6.8.0",
         "@typescript-eslint/parser": "^6.8.0",

@@ -1,3 +1,5 @@
 <nav class="doc-navbar-header">
-    <a mat-button *ngFor="let link of links" [routerLink]="link?.routerLink">{{ link?.text }}</a>
+    @for (link of links; track link.text) {
+    <a mat-button [routerLink]="link?.routerLink"> {{ link?.text }} </a>
+    }
 </nav>

@@ -1,0 +1,47 @@
+{
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "name": "layout",
+    "projectType": "library",
+    "sourceRoot": "projects/layout/src",
+    "prefix": "lib",
+    "targets": {
+        "build": {
+            "executor": "@angular-devkit/build-angular:ng-packagr",
+            "options": {
+                "tsConfig": "projects/layout/tsconfig.lib.json",
+                "project": "projects/layout/ng-package.json"
+            },
+            "configurations": {
+                "production": {
+                    "tsConfig": "projects/layout/tsconfig.lib.prod.json"
+                },
+                "development": {}
+            },
+            "defaultConfiguration": "production",
+            "outputs": [
+                "{workspaceRoot}/dist/layout"
+            ]
+        },
+        "test": {
+            "executor": "@angular-devkit/build-angular:karma",
+            "options": {
+                "main": "projects/layout/src/test.ts",
+                "inlineStyleLanguage": "scss",
+                "tsConfig": "projects/layout/tsconfig.spec.json",
+                "karmaConfig": "projects/layout/karma.conf.js"
+            }
+        },
+        "lint": {
+            "executor": "@angular-eslint/builder:lint",
+            "options": {
+                "lintFilePatterns": [
+                    "projects/layout/**/*.ts",
+                    "projects/layout/**/*.html"
+                ]
+            },
+            "outputs": [
+                "{options.outputFile}"
+            ]
+        }
+    }
+}

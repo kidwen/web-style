@@ -36,7 +36,7 @@
         "@angular/cli": "^16.2.7",
         "@angular/compiler-cli": "^16.2.10",
         "@angular/language-service": "^16.2.10",
-        "@kidwen/eslint-config-angular": "^16.1.1",
+        "@kidwen/eslint-config-angular": "^17.1.0",
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^4.3.5",
         "@types/jasminewd2": "^2.0.8",

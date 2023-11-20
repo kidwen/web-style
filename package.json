@@ -2,11 +2,12 @@
     "name": "style-app",
     "version": "0.0.0",
     "scripts": {
-        "ng": "ng --version",
-        "start": "ng serve --hmr",
-        "build": "npm run build:layout && ng build",
-        "build:layout": "ng build layout",
-        "lint": "ng lint"
+        "ng": "nx --version",
+        "start": "nx serve --hmr",
+        "build": "nx exec -- yarn _build ",
+        "build:layout": "nx exec -- nx build layout",
+        "lint": "nx exec -- nx lint",
+        "_build": "npm run build:layout && nx build"
     },
     "private": true,
     "dependencies": {
@@ -28,6 +29,8 @@
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^17.0.1",
+        "@angular-devkit/core": "^17.0.1",
+        "@angular-devkit/schematics": "^17.0.1",
         "@angular-eslint/builder": "17.1.0",
         "@angular-eslint/eslint-plugin": "17.1.0",
         "@angular-eslint/eslint-plugin-template": "17.1.0",
@@ -37,6 +40,9 @@
         "@angular/compiler-cli": "^17.0.3",
         "@angular/language-service": "^17.0.3",
         "@kidwen/eslint-config-angular": "^17.1.0",
+        "@nx/angular": "17.1.2",
+        "@nx/workspace": "17.1.2",
+        "@schematics/angular": "^17.0.1",
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^4.3.5",
         "@types/jasminewd2": "^2.0.8",
@@ -48,6 +54,7 @@
         "jasmine-core": "^5.1.0",
         "jasmine-spec-reporter": "^7.0.0",
         "ng-packagr": "^17.0.1",
+        "nx": "17.1.2",
         "protractor": "^7.0.0",
         "ts-node": "^10.9.1",
         "typescript": "5.2.2"
@@ -56,5 +63,19 @@
         "node": ">=16.10.0",
         "npm": "Please use yarn instead of NPM to install dependencies"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "nx": {
+        "targets": {
+            "build": {
+                "outputs": [
+                    "{projectRoot}/dist"
+                ]
+            },
+            "build:layout": {
+                "outputs": [
+                    "{projectRoot}/dist"
+                ]
+            }
+        }
+    }
 }

@@ -109,7 +109,7 @@
     "@angular-devkit/architect" "0.1700.1"
     rxjs "7.8.1"
 
-"@angular-devkit/core@17.0.1", "@angular-devkit/core@^17.0.1":
+"@angular-devkit/core@17.0.1":
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-17.0.1.tgz#be53712f881c91ff41333d467dcb3a11db01f7ee"
   integrity sha512-UjNx9fZW0oU7UaeoB0HblYz/Nm8MWtinAe39XkY+zjECLWqKAcHPotfYjucXiky1UlBUOScIKbwjMDdEY8xkuw==
@@ -121,12 +121,35 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/schematics@17.0.1", "@angular-devkit/schematics@^17.0.1":
+"@angular-devkit/core@17.0.5", "@angular-devkit/core@^17.0.1":
+  version "17.0.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-17.0.5.tgz#247a4779d5c9c5bc9f2ebbfc10962a057d5a9c5c"
+  integrity sha512-e1evgRabAfOZBnmFCe8E0oufcu+FzBe5hBzS94Dm42GlxdX965/M4yVKQxIMpjivQTmjl+AWb6cF1ltBdSGZeQ==
+  dependencies:
+    ajv "8.12.0"
+    ajv-formats "2.1.1"
+    jsonc-parser "3.2.0"
+    picomatch "3.0.1"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/schematics@17.0.1":
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-17.0.1.tgz#e79b48594840ca7289730ff49a7b3b09f23ea209"
   integrity sha512-bwgdGviRZC5X8Tl4QcjtIJAcC0p8yIhOyYVFrq4PWYvI+DfV9P6w3OFuoS6rwEoiIQR90+12iKBYMt1MfL/c0Q==
   dependencies:
     "@angular-devkit/core" "17.0.1"
+    jsonc-parser "3.2.0"
+    magic-string "0.30.5"
+    ora "5.4.1"
+    rxjs "7.8.1"
+
+"@angular-devkit/schematics@^17.0.5":
+  version "17.0.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-17.0.5.tgz#afa2d9ab89e7e85e5ce266e3229c8a9bac60d877"
+  integrity sha512-KYPku0qTb8B+TtRbFqXGYpJOPg1k6d5bNHV6n8jTc35mlEUUghOd7HkovdfkQ3cgGNQM56a74D1CvSeruZEGsA==
+  dependencies:
+    "@angular-devkit/core" "17.0.5"
     jsonc-parser "3.2.0"
     magic-string "0.30.5"
     ora "5.4.1"

@@ -3026,6 +3026,13 @@
   dependencies:
     "@nx/devkit" "17.1.2"
 
+"@nrwl/devkit@17.2.8":
+  version "17.2.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-17.2.8.tgz#dd3467b484c4611454a45541ffb29e4de5b2ebe7"
+  integrity sha512-l2dFy5LkWqSA45s6pee6CoqJeluH+sjRdVnAAQfjLHRNSx6mFAKblyzq5h1f4P0EUCVVVqLs+kVqmNx5zxYqvw==
+  dependencies:
+    "@nx/devkit" "17.2.8"
+
 "@nrwl/jest@17.1.2":
   version "17.1.2"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-17.1.2.tgz#f1eb66fe18ec85ffbe5e765fd5fe23e2acfa12cc"
@@ -3077,6 +3084,13 @@
   dependencies:
     "@nx/workspace" "17.1.2"
 
+"@nrwl/workspace@17.2.8":
+  version "17.2.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-17.2.8.tgz#79d0c143d38087c3e8ee1401c1f977696e5055cd"
+  integrity sha512-RiTDTuzdueZ+++kNQAENHdHbYToOhzO56XWxKOGoMEUSpcmbKRAFReFBzNqD91Fnv562vkW1VNRIb6Ey7X1YHQ==
+  dependencies:
+    "@nx/workspace" "17.2.8"
+
 "@nx/angular@17.1.2":
   version "17.1.2"
   resolved "https://registry.yarnpkg.com/@nx/angular/-/angular-17.1.2.tgz#96fbfb5d9797621b0a698c21fdfd501113490638"
@@ -3123,6 +3137,19 @@
   integrity sha512-9Izd9jsa++AaZSSlhi0zkv58k4clzE0kICurx9DjfWN6zXnD08HqJoUYCVVaeYS/SrWlQUbMig8e49BO8ZV5mw==
   dependencies:
     "@nrwl/devkit" "17.1.2"
+    ejs "^3.1.7"
+    enquirer "~2.3.6"
+    ignore "^5.0.4"
+    semver "7.5.3"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
+"@nx/devkit@17.2.8":
+  version "17.2.8"
+  resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-17.2.8.tgz#49b6c94a3c12fba63eae6514fb37a468d0570e2e"
+  integrity sha512-6LtiQihtZwqz4hSrtT5cCG5XMCWppG6/B8c1kNksg97JuomELlWyUyVF+sxmeERkcLYFaKPTZytP0L3dmCFXaw==
+  dependencies:
+    "@nrwl/devkit" "17.2.8"
     ejs "^3.1.7"
     enquirer "~2.3.6"
     ignore "^5.0.4"
@@ -3368,6 +3395,19 @@
     chalk "^4.1.0"
     enquirer "~2.3.6"
     nx "17.1.2"
+    tslib "^2.3.0"
+    yargs-parser "21.1.1"
+
+"@nx/workspace@17.2.8":
+  version "17.2.8"
+  resolved "https://registry.yarnpkg.com/@nx/workspace/-/workspace-17.2.8.tgz#61fdfc7757231c423f8a98713c0df65241721592"
+  integrity sha512-QCriI4CFCuG+0WTbpu3fHljVR1x6bjNSrbq8nqu8Z/3y+si2/O+7lVNSTkQNr1X2eBPqtIX74APS7ExG8c4vog==
+  dependencies:
+    "@nrwl/workspace" "17.2.8"
+    "@nx/devkit" "17.2.8"
+    chalk "^4.1.0"
+    enquirer "~2.3.6"
+    nx "17.2.8"
     tslib "^2.3.0"
     yargs-parser "21.1.1"
 

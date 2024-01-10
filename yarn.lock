@@ -194,13 +194,21 @@
     aria-query "5.3.0"
     axobject-query "4.0.0"
 
-"@angular-eslint/eslint-plugin@17.1.0", "@angular-eslint/eslint-plugin@^17.1.0":
+"@angular-eslint/eslint-plugin@17.1.0":
   version "17.1.0"
   resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin/-/eslint-plugin-17.1.0.tgz#461be368ba0558a4a648a1da0eca0cbb56407e48"
   integrity sha512-pQac5h+XwsquDzaasK/xs9tjdQ/f9eLq8e5An9eXJGHWy4KcrMmQ1XrpaMMMg503LF3rRG/dHKBskGsYgSN9oQ==
   dependencies:
     "@angular-eslint/utils" "17.1.0"
     "@typescript-eslint/utils" "6.11.0"
+
+"@angular-eslint/eslint-plugin@17.2.0", "@angular-eslint/eslint-plugin@^17.1.0":
+  version "17.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin/-/eslint-plugin-17.2.0.tgz#0a2e7f5ab1d5d8e9bb127e2ac6ba8d497be96b05"
+  integrity sha512-8A3hD/11N6QEchsAGggTPmNsa0GS5p44t930slMsxrTvdSlKAo56FzVdxwSkOcejKIJs57oWxoKvtK4UyLYkeA==
+  dependencies:
+    "@angular-eslint/utils" "17.2.0"
+    "@typescript-eslint/utils" "6.18.0"
 
 "@angular-eslint/schematics@17.1.0", "@angular-eslint/schematics@^17.1.0":
   version "17.1.0"

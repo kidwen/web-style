@@ -46,7 +46,7 @@
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^5.1.4",
         "@types/jasminewd2": "^2.0.8",
-        "@types/node": "^20.5.0",
+        "@types/node": "^20.11.0",
         "@typescript-eslint/eslint-plugin": "^6.10.0",
         "@typescript-eslint/parser": "^6.10.0",
         "codelyzer": "^6.0.1",

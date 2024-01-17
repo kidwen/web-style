@@ -42,5 +42,5 @@ jobs:
       - name: Prepare and deploy
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run ng --deploy --base-href=/web-style/ --name="Kidwen" --email=xuqiujia2020@outlook.com
+        run: yarn nx deploy --base-href=/web-style/   
         # npm run ng -- deploy --base-href=/web-style/ --name="Kidwen" --email=xuqiujia2020@outlook.com

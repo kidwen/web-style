@@ -4,50 +4,43 @@
 name: Angular-CI
 
 on:
-    push:
-        branches: [dev, master]
-    pull_request:
-        branches: [dev, master]
+  push:
+    branches: [dev, master]
+  pull_request:
+    branches: [dev, master]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v4
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
-              with:
-                  node-version: ${{ matrix.node-version }}
-            - name: Cache node Modules
-              uses: actions/cache@v3
-              env:
-                  cache-name: cache-node-modules
-              with:
-                  # npm cache files are stored in `~/.npm` on linux/macOS
-                  path: ~/npm
-                  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: |
-                      ${{ runner.os }}-build-${{ env.cache-name }}-
-                      ${{ runner.os }}-build-
-                      ${{ runner.os }}-
-            - name: Authenticate with GitHub package registry
-              run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
-            - name: Install Dependencies
-              run: yarn
-            - name: Lint Code
-              run: yarn lint
-            - name: Build App
-              run: yarn build
-            - name: Prepare and deploy
-              env:
-                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                ###
-                # Configure Angular first!
-                ####
-                # npm test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
-                # npm run webdriver-update-ci
-                # npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js --webdriver-update=false
-                ####
-                npm run ng -- deploy --base-href=/web-style/ --name="Kidwen" --email=xuqiujia2020@outlook.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache node Modules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          # npm cache files are stored in `~/.npm` on linux/macOS
+          path: ~/npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: Authenticate with GitHub package registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+      - name: Install Dependencies
+        run: yarn
+      - name: Lint Code
+        run: yarn lint
+      - name: Build App
+        run: yarn build
+      - name: Prepare and deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn deploy
+        # npm run ng -- deploy --base-href=/web-style/ --name="Kidwen" --email=xuqiujia2020@outlook.com

@@ -7,7 +7,8 @@
         "build": "nx exec -- yarn _build ",
         "build:layout": "nx exec -- nx build layout",
         "lint": "nx exec -- nx lint",
-        "_build": "npm run build:layout && nx build"
+        "_build": "npm run build:layout && nx build",
+        "deploy": "ng deploy --base-href=/web-style/"
     },
     "private": true,
     "dependencies": {

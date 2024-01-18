@@ -39,7 +39,7 @@
         "@angular-eslint/template-parser": "17.2.0",
         "@angular/cli": "^17.0.9",
         "@angular/compiler-cli": "^17.0.3",
-        "@angular/language-service": "^17.0.9",
+        "@angular/language-service": "^17.1.0",
         "@kidwen/eslint-config-angular": "^17.1.0",
         "@nx/angular": "17.2.8",
         "@nx/workspace": "17.2.8",

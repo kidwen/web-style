@@ -39,8 +39,36 @@ jobs:
         run: yarn lint
       - name: Build App
         run: yarn build
-      - name: Prepare and deploy
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn nx deploy --base-href=/web-style/   
+      - name: Archive build
+        if: success()
+        uses: actions/upload-artifact@v1
+        with:
+          name: deploy_dist
+          path: dist
+      - name: Archive code coverage result
+        if: success()
+        uses: actions/upload-artifact@v1
+        with:
+          name: deploy_coverage
+          path: coverage
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Download build
+        uses: actions/download-artifact@v1
+        with:
+          name: deploy_dist
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: deploy_dist/web-style
+      # - name: Prepare and deploy
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: yarn nx deploy --base-href=/web-style/   
         # npm run ng -- deploy --base-href=/web-style/ --name="Kidwen" --email=xuqiujia2020@outlook.com

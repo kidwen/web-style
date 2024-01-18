@@ -58,7 +58,7 @@
         "ng-packagr": "^17.0.3",
         "nx": "17.2.8",
         "protractor": "^7.0.0",
-        "ts-node": "^10.9.1",
+        "ts-node": "^10.9.2",
         "typescript": "5.2.2"
     },
     "engines": {

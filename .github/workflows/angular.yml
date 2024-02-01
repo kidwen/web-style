@@ -39,10 +39,9 @@ jobs:
         run: yarn lint
       - name: Build App
         run: yarn build
-      - name: Prepare and deploy
-        # run: yarn nx deploy --base-href=/web-style/
-        run: npx angular-cli-ghpages --dir=/dist/web-style
-        env:
-          CI: true
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Prepare and deploy
+        # run: npx angular-cli-ghpages --dir=/dist/web-style
+        # env:
+        #   CI: true
+        #   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # npm run ng -- deploy --base-href=/web-style/ --name="Kidwen" --email=xuqiujia2020@outlook.com

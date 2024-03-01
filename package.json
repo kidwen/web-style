@@ -42,7 +42,7 @@
         "@angular/language-service": "^17.0.9",
         "@kidwen/eslint-config-angular": "^17.1.0",
         "@nx/angular": "17.2.8",
-        "@nx/workspace": "17.2.8",
+        "@nx/workspace": "18.0.6",
         "@schematics/angular": "^17.0.1",
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^5.1.4",

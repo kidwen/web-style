@@ -41,7 +41,7 @@
         "@angular/compiler-cli": "^17.0.3",
         "@angular/language-service": "^17.0.9",
         "@kidwen/eslint-config-angular": "^17.1.0",
-        "@nx/angular": "17.2.8",
+        "@nx/angular": "18.2.3",
         "@nx/workspace": "17.2.8",
         "@schematics/angular": "^17.0.1",
         "@types/estree": "^1.0.0",

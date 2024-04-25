@@ -38,7 +38,7 @@
         "@angular-eslint/schematics": "17.1.0",
         "@angular-eslint/template-parser": "17.3.0",
         "@angular/cli": "^17.0.9",
-        "@angular/compiler-cli": "^17.0.3",
+        "@angular/compiler-cli": "^17.3.5",
         "@angular/language-service": "^17.0.9",
         "@kidwen/eslint-config-angular": "^17.1.0",
         "@nx/angular": "17.2.8",

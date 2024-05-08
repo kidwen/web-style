@@ -43,7 +43,7 @@
         "@kidwen/eslint-config-angular": "^17.1.0",
         "@nx/angular": "17.2.8",
         "@nx/workspace": "17.2.8",
-        "@schematics/angular": "^17.0.1",
+        "@schematics/angular": "^17.3.7",
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^5.1.4",
         "@types/jasminewd2": "^2.0.8",

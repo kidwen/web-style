@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { User } from 'src/model/user.model';
+import { User } from 'src/models/user.model';
 
 @Component({
     selector: 'style-parent',
@@ -8,7 +8,7 @@ import { User } from 'src/model/user.model';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ParentComponent {
-    public user: User = { name: 'kidwen' };
+    public user: User = { id: 'kidwen', name: 'kidwen' };
 
     public changeUserName(): void {
         if (this.user.name === 'kidwen') {

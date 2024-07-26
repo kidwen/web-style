@@ -1,5 +1,5 @@
 import { registerLocaleData } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { default as zh } from '@angular/common/locales/zh';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,26 +9,26 @@ import { FooterModule, LayoutModule, MenuNavModule, NavbarModule } from '@kidwen
 import { HomeModule } from '../modules/home.module';
 import { AppComponent } from './app.component';
 import { TankModule } from './tank/tank.module';
+import { provideHighlightOptions } from 'ngx-highlightjs';
 
 registerLocaleData(zh);
 
-@NgModule({
-    declarations: [
+@NgModule({ declarations: [
         AppComponent,
     ],
-    imports: [
-        RouterModule.forRoot([], { canceledNavigationResolution: 'computed' }),
+    bootstrap: [AppComponent], imports: [RouterModule.forRoot([], { canceledNavigationResolution: 'computed' }),
         BrowserModule,
         BrowserAnimationsModule,
         TankModule,
-        HttpClientModule,
         HomeModule,
         FooterModule,
         LayoutModule,
         NavbarModule,
-        MenuNavModule,
-    ],
-    bootstrap: [AppComponent],
-})
+        MenuNavModule], providers: [
+        provideHighlightOptions({
+            fullLibraryLoader: () => import('highlight.js')
+        }),
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 
 export class AppModule { }

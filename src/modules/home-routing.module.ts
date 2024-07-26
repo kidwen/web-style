@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { TableDemoComponent } from './table/table-demo.component';
+import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 
 const routes: Routes = [
     { path: 'animate', component: AnimateComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
     { path: 'table', component: TableDemoComponent },
     { path: 'change-detection', component: ParentComponent },
     { path: 'dynamic-component', component: NgComponentOutletCompleteExampleComponent },
+    { path: 'template-variables', component: TemplateVariablesComponent },
 ];
 
 @NgModule({

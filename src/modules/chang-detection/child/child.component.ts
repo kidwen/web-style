@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { User } from 'src/model/user.model';
+import { User } from 'src/models/user.model';
 
 @Component({
     selector: 'style-child',
@@ -9,5 +9,5 @@ import { User } from 'src/model/user.model';
 })
 export class ChildComponent {
     @Input()
-    public user: User = { name: 'kidwen' };
+    public user: User = { id: 'kidwen', name: 'kidwen' };
 }

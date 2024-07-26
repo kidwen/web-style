@@ -1,48 +1,49 @@
 {
-    "targetDefaults": {
-        "build": {
-            "cache": true,
-            "dependsOn": [
-                "^build"
-            ],
-            "inputs": [
-                "production",
-                "^production"
-            ]
-        },
-        "lint": {
-            "cache": true,
-            "inputs": [
-                "default",
-                "{workspaceRoot}/.eslintrc.json"
-            ]
-        },
-        "test": {
-            "cache": true,
-            "inputs": [
-                "default",
-                "^production"
-            ]
-        },
-        "build:layout": {
-            "cache": true
-        }
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
     },
-    "affected": {
-        "defaultBase": "dev"
+    "lint": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json"
+      ]
     },
-    "namedInputs": {
-        "sharedGlobals": [],
-        "default": [
-            "{projectRoot}/**/*",
-            "sharedGlobals"
-        ],
-        "production": [
-            "default",
-            "!{projectRoot}/tsconfig.spec.json",
-            "!{projectRoot}/**/*.spec.[jt]s",
-            "!{projectRoot}/.eslintrc.json",
-            "!{projectRoot}/eslint.config.js"
-        ]
+    "test": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production"
+      ]
+    },
+    "build:layout": {
+      "cache": true
     }
+  },
+  "affected": {
+    "defaultBase": "dev"
+  },
+  "namedInputs": {
+    "sharedGlobals": [],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/**/*.spec.[jt]s",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/eslint.config.js"
+    ]
+  },
+  "nxCloudAccessToken": "OTA1ZmVkM2UtYzQ3ZS00MmZmLTlhOWMtYmQ4YTJkYTg4OTc2fHJlYWQtd3JpdGU="
 }

@@ -17,6 +17,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { TableDemoComponent } from './table/table-demo.component';
 import { CompleteComponent } from './dynamic-component/complete/complete.component';
 import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/ng-component-outlet-complete-example/ng-component-outlet-complete-example.component';
+import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { Highlight } from 'ngx-highlightjs';
 
 @NgModule({
     imports: [
@@ -26,6 +28,7 @@ import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/n
         MatTabsModule,
         TableModule,
         MatButtonModule,
+        Highlight,
     ],
     declarations: [
         AnimateComponent,
@@ -39,6 +42,7 @@ import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/n
         ChildComponent,
         CompleteComponent,
         NgComponentOutletCompleteExampleComponent,
+        TemplateVariablesComponent,
         ...directives,
     ],
 })

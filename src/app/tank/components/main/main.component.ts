@@ -39,8 +39,7 @@ export class MainComponent implements OnDestroy {
     }, {
         routerLink: './template-variables',
         text: 'TemplateVariables',
-    }
-    ];
+    }];
 
     public selectedMenu: string = 'Intro';
 

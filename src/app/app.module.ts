@@ -6,10 +6,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { FooterModule, LayoutModule, MenuNavModule, NavbarModule } from '@kidwen/layout';
+import { provideHighlightOptions } from 'ngx-highlightjs';
 import { HomeModule } from '../modules/home.module';
 import { AppComponent } from './app.component';
 import { TankModule } from './tank/tank.module';
-import { provideHighlightOptions } from 'ngx-highlightjs';
 
 registerLocaleData(zh);
 
@@ -26,9 +26,9 @@ registerLocaleData(zh);
         NavbarModule,
         MenuNavModule], providers: [
         provideHighlightOptions({
-            fullLibraryLoader: () => import('highlight.js')
+            fullLibraryLoader: () => import('highlight.js'),
         }),
-        provideHttpClient(withInterceptorsFromDi())
+        provideHttpClient(withInterceptorsFromDi()),
     ] })
 
 export class AppModule { }

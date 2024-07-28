@@ -9,7 +9,7 @@ export class UserService {
             take(3),
             mergeMap(async index => {
                 const user: User = {
-                    id: (++index).toString(),
+                    id: (1 + index).toString(),
                     name: 'kidwen',
                 }
                 return user;

@@ -7,7 +7,7 @@
     {{ user.id }} {{ user.name }} - used by &#64;if;
     }
     @let points = (points$ | async) ?? 0;
-    <div>Use &#64;let declare var `points` {{points}}</div>
+    <div class="use-let">Use &#64;let declare var `points` {{points}}</div>
     @for (item of [1,2,3]; track $index) {
         The {{item}} item;
     }

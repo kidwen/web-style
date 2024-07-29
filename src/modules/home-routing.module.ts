@@ -10,6 +10,8 @@ import { PositionComponent } from './position/position.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { TableDemoComponent } from './table/table-demo.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { AngularResolverParentComponent } from './angular-resolver/components/angular-resolver-parent/angular-resolver-parent.component';
+import { AngularResolverService } from './angular-resolver/services/angular-resolver.service';
 
 const routes: Routes = [
     { path: 'animate', component: AnimateComponent },
@@ -22,6 +24,11 @@ const routes: Routes = [
     { path: 'change-detection', component: ParentComponent },
     { path: 'dynamic-component', component: NgComponentOutletCompleteExampleComponent },
     { path: 'template-variables', component: TemplateVariablesComponent },
+    {
+        path: 'angular-resolver',
+        component: AngularResolverParentComponent,
+        resolve: [AngularResolverService],
+    },
 ];
 
 @NgModule({

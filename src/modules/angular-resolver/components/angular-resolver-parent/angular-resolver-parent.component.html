@@ -1,0 +1,35 @@
+<img src="https://img.kidwen.top/file/71c998df3da454cd561ad.png" alt="lifeStyle">
+<app-angular-resolver-child [user]="{id: '1'}"></app-angular-resolver-child>
+<app-angular-resolver-brother [user]="{id: '1'}"></app-angular-resolver-brother>
+<h1>执行顺序</h1>
+
+<ul>
+    <li>construct</li>
+    <ul>
+        <li>child - construct</li>
+        <li>brother - construct</li>
+    </ul>
+    <li>onChanges</li>
+    <li>onInit</li>
+    <li>doCheck</li>
+    <li>afterContentInit</li>
+    <li>afterContentChecked</li>
+    <ul>
+        <li>child - onChanges</li>
+        <li>child - onInit</li>
+        <li>child - doCheck</li>
+        <li>brother - onChanges</li>
+        <li>brother - onInit</li>
+        <li>brother - doCheck</li>
+        <li>child - afterContentInit</li>
+        <li>child - afterContentChecked</li>
+        <li>brother - afterContentInit</li>
+        <li>brother - afterContentChecked</li>
+        <li>child - afterViewInit</li>
+        <li>child - afterViewChecked</li>
+        <li>brother - afterViewInit</li>
+        <li>brother - afterViewChecked</li>
+    </ul>
+    <li>afterViewInit</li>
+    <li>afterViewChecked</li>
+</ul>

@@ -39,6 +39,9 @@ export class MainComponent implements OnDestroy {
     }, {
         routerLink: './template-variables',
         text: 'TemplateVariables',
+    }, {
+        routerLink: './angular-resolver',
+        text: 'AngularResolver',
     }];
 
     public selectedMenu: string = 'Intro';
@@ -52,7 +55,7 @@ export class MainComponent implements OnDestroy {
         this.sub = this.router.events.pipe(
             filter((e): e is NavigationEnd => e instanceof NavigationEnd),
         ).subscribe(e => {
-            this.selectedMenu = this.links.find(l => l.routerLink == e.url)?.text ?? this.selectedMenu;
+            this.selectedMenu = this.links.find(l => e.url.includes(l.routerLink.split('/')[1]))?.text ?? this.selectedMenu;
         });
     }
 

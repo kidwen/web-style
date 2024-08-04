@@ -40,20 +40,18 @@ export class RxjsComponent implements OnInit, OnDestroy {
 
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function task(this: SchedulerAction<number>, state: any): void {
+function task(this: SchedulerAction<number>, state: number): void {
     // eslint-disable-next-line no-invalid-this
-    this.schedule((state as number) + 1, 1000); // `this` references currently executing Action, which we reschedule with new state and delay
+    this.schedule(state + 1, 1000); // `this` references currently executing Action, which we reschedule with new state and delay
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function addHeight(this: SchedulerAction<number>, height: any): void {
+function addHeight(this: SchedulerAction<number>, height: number): void {
     if (height > 300) {
         return;
     }
     if (div) {
         div.style.height = `${height}px`;
         // eslint-disable-next-line no-invalid-this
-        this.schedule((height as number) + 0.1);
+        this.schedule(height + 0.1);
     }
 }

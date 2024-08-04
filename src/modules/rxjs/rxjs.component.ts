@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, View
 import { animationFrameScheduler, asyncScheduler, SchedulerAction, Subscription } from 'rxjs';
 
 let div: HTMLDivElement | null = null;
+
 @Component({
     selector: 'style-rxjs',
     templateUrl: './rxjs.component.html',
@@ -11,7 +12,9 @@ let div: HTMLDivElement | null = null;
 export class RxjsComponent implements OnInit, OnDestroy {
     @ViewChild('animal', { static: true })
     public animalDiv?: ElementRef; public divContent?: string;
+
     public sub$?: Subscription;
+
     public animal$?: Subscription;
 
     public ngOnInit(): void {

@@ -3,6 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { routes } from '../../../../modules/home-routing.module';
 
 @Component({
     selector: 'style-main',
@@ -12,42 +13,11 @@ import { filter } from 'rxjs/operators';
 })
 export class MainComponent implements OnDestroy {
 
-    public links: Array<MatButtonProperty> = [{
-        routerLink: './animate',
-        text: 'Animate',
-    }, {
-        routerLink: './center',
-        text: 'Center',
-    }, {
-        routerLink: './css',
-        text: 'Css',
-    }, {
-        routerLink: './position',
-        text: 'Position',
-    }, {
-        routerLink: './rxjs',
-        text: 'Rxjs',
-    }, {
-        routerLink: './shadow',
-        text: 'Shadow',
-    }, {
-        routerLink: './change-detection',
-        text: 'ChangeDetection',
-    }, {
-        routerLink: './dynamic-component',
-        text: 'DynamicComponent',
-    }, {
-        routerLink: './template-variables',
-        text: 'TemplateVariables',
-    }, {
-        routerLink: './angular-resolver',
-        text: 'AngularResolver',
-    }];
+    public links: Array<MatButtonProperty> = new Array<MatButtonProperty>();
 
     public selectedMenu: string = 'Intro';
 
     private sub?: Subscription;
-
 
     public constructor(
         private router: Router,
@@ -57,6 +27,11 @@ export class MainComponent implements OnDestroy {
         ).subscribe(e => {
             this.selectedMenu = this.links.find(l => e.url.includes(l.routerLink.split('/')[1]))?.text ?? this.selectedMenu;
         });
+        this.links = routes.map(item => ({
+            routerLink: item.path,
+            text: item.data?.title,
+        }));
+        this.selectedMenu = this.links.find(l => window.location.pathname.includes(l.routerLink))?.text ?? this.selectedMenu;
     }
 
     public onSelected(e: string): void {

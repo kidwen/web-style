@@ -13,21 +13,84 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
 import { AngularResolverParentComponent } from './angular-resolver/components/angular-resolver-parent/angular-resolver-parent.component';
 import { AngularResolverService } from './angular-resolver/services/angular-resolver.service';
 
-const routes: Routes = [
-    { path: 'animate', component: AnimateComponent },
-    { path: 'position', component: PositionComponent },
-    { path: 'center', component: CenterComponent },
-    { path: 'css', component: CssStyleComponent },
-    { path: 'rxjs', component: RxjsComponent },
-    { path: 'shadow', component: HomeComponent },
-    { path: 'table', component: TableDemoComponent },
-    { path: 'change-detection', component: ParentComponent },
-    { path: 'dynamic-component', component: NgComponentOutletCompleteExampleComponent },
-    { path: 'template-variables', component: TemplateVariablesComponent },
+export const routes: Routes = [
+    {
+        path: 'animate',
+        component: AnimateComponent,
+        data: {
+            title: 'Animate',
+        },
+    },
+    {
+        path: 'position',
+        component: PositionComponent,
+        data: {
+            title: 'Position',
+        },
+    },
+    {
+        path: 'center',
+        component: CenterComponent,
+        data: {
+            title: 'Center',
+        },
+    },
+    {
+        path: 'css',
+        component: CssStyleComponent,
+        data: {
+            title: 'Css',
+        },
+    },
+    {
+        path: 'rxjs',
+        component: RxjsComponent,
+        data: {
+            title: 'Rxjs',
+        },
+    },
+    {
+        path: 'shadow',
+        component: HomeComponent,
+        data: {
+            title: 'Shadow',
+        },
+    },
+    {
+        path: 'table',
+        component: TableDemoComponent,
+        data: {
+            title: 'Table',
+        },
+    },
+    {
+        path: 'change-detection',
+        component: ParentComponent,
+        data: {
+            title: 'ChangeDetection',
+        },
+    },
+    {
+        path: 'dynamic-component',
+        component: NgComponentOutletCompleteExampleComponent,
+        data: {
+            title: 'Dynamic Component',
+        },
+    },
+    {
+        path: 'template-variables',
+        component: TemplateVariablesComponent,
+        data: {
+            title: 'Template Variables',
+        },
+    },
     {
         path: 'angular-resolver',
         component: AngularResolverParentComponent,
         resolve: [AngularResolverService],
+        data: {
+            title: 'Angular Resolver',
+        },
     },
 ];
 

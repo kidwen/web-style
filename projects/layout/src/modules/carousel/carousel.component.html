@@ -8,8 +8,11 @@
     <div class="docs-carousel-content" role="list" tabindex="0" #list>
         <ng-content></ng-content>
     </div>
-
 </div>
+
+
+@if(showNextArrow) {
 <button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-next" (click)="next();">
     <mat-icon>navigate_next</mat-icon>
 </button>
+}

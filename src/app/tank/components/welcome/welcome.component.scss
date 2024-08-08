@@ -15,7 +15,7 @@
             inset: 0;
             background-repeat: no-repeat;
             background-position: 80% 20px;
-            opacity: .2;
+            opacity: 0.2;
         }
     }
 
@@ -137,12 +137,33 @@
         box-sizing: border-box;
         font-size: 18px;
 
+        .docs-homepage-img-container {
+            overflow: hidden;
+            margin-bottom: 16px;
+            max-height: 200px;
+        }
+
         img {
             transition: 0.3s ease-in-out;
-            width: 100%;
             min-width: 262px;
             min-height: 145px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
+    }
+
+    .carousel-item {
+        width: 48%;
+
+        @media (min-width: 1020px) {
+            max-width: 32%;
+        }
+    }
+
+    .carousel-item + .carousel-item {
+        margin-left: 2%;
     }
 
     @media (max-width: 1200px) {

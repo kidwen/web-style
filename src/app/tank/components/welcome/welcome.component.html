@@ -35,16 +35,16 @@
         <mat-divider role="separator"></mat-divider>
         <div class="doc-homepage-featured-components docs-homepage-carousel-row">
             <div class="docs-homepage-header">
-                <h2>Featured example</h2>
+                <h2>Featured components</h2>
                 <a routerLink="/demos" class="docs-link" href="/demos">
-                    View all example
+                    View all components
                     <mat-icon aria-hidden="true">chevron_right</mat-icon>
                 </a>
             </div>
             <lib-carousel>
                 <a routerLink="/demos/{{component.originValue}}" *ngFor="let component of components; index as i" class="carousel-item docs-featured-components-carousel-item" tabindex="-1" role="listitem">
                     <div class="docs-homepage-img-container">
-                        <img role="presentation" [src]="component" alt>
+                        <img role="presentation" [src]="component.imgUrl" alt>
                     </div>
                     {{ component.name }}
                 </a>

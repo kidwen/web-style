@@ -1,13 +1,15 @@
-<button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-prev">
+@if(showPrevArrow){
+<button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-prev" (click)="previous();">
     <mat-icon>navigate_before</mat-icon>
 </button>
+}
 
 <div class="docs-carousel-content-wrapper" role="region">
-    <div class="docs-carousel-content" role="list" tabindex="0">
+    <div class="docs-carousel-content" role="list" tabindex="0" #list>
         <ng-content></ng-content>
     </div>
 
 </div>
-<button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-next">
+<button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-next" (click)="next();">
     <mat-icon>navigate_next</mat-icon>
 </button>

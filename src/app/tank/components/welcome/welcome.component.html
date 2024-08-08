@@ -42,7 +42,7 @@
                 </a>
             </div>
             <lib-carousel>
-                <a routerLink="/demos/{{component.originValue}}" *ngFor="let component of components; index as i" class="carousel-item docs-featured-components-carousel-item" tabindex="-1" role="listitem">
+                <a carousel-item routerLink="/demos/{{component.originValue}}" *ngFor="let component of components; index as i" class="carousel-item docs-featured-components-carousel-item" tabindex="-1" role="listitem">
                     <div class="docs-homepage-img-container">
                         <img role="presentation" [src]="component.imgUrl" alt>
                     </div>

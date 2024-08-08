@@ -1,11 +1,24 @@
 :host(style-welcome) {
     margin-top: 56px;
     overflow-y: auto;
+
     .docs-header-background {
         overflow: hidden;
         position: relative;
         height: 420px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(https://v16.material.angular.io/angular-white-transparent.d4d5ed2946afa9f1.svg);
+            background-size: 600px;
+            inset: 0;
+            background-repeat: no-repeat;
+            background-position: 80% 20px;
+            opacity: .2;
+        }
     }
+
     .docs-header-section {
         width: 90%;
         position: absolute;
@@ -15,14 +28,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .docs-header-headline {
         color: #ffffff;
+
         h1 {
             font-size: 56px;
             font-weight: bold;
             line-height: 56px;
             margin: 15px 5px;
         }
+
         h2 {
             font-size: 20px;
             font-weight: 300;
@@ -30,10 +46,12 @@
             margin: 15px 0 25px;
         }
     }
+
     .docs-header-start {
         text-align: center;
         margin: 50px 0 0;
     }
+
     .docs-homepage-promo {
         display: flex;
         align-items: center;
@@ -42,15 +60,18 @@
         width: 75%;
         max-width: 1000px;
         margin: auto;
+
         mat-divider {
             width: 100%;
         }
+
         h2 {
             font-size: 25px;
             font-weight: 400;
             margin: 0 0 16px;
             padding: 0;
         }
+
         p {
             font-size: 16px;
             font-weight: 400;
@@ -58,53 +79,64 @@
             margin: 0 0 24px;
             padding: 0;
         }
+
         mat-icon {
             vertical-align: middle;
         }
     }
+
     .docs-homepage-row {
         display: flex;
         flex-direction: row;
         margin: 50px 0;
     }
+
     .docs-homepage-row-column {
         width: 32%;
         height: 290px;
         display: flex;
         flex-direction: column;
     }
+
     .docs-homepage-carousel-row {
         margin: 50px 0;
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     .docs-homepage-header {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 16px;
+
         h2 {
             margin: 0;
             color: rgba($color: #000000, $alpha: 0.54);
         }
     }
+
     .docs-link {
         display: inline-flex;
         align-items: center;
+
         &:hover {
             color: rgba($color: #000000, $alpha: 0.87);
         }
     }
+
     lib-carousel {
         display: block;
         position: relative;
     }
+
     .docs-featured-components-carousel-item {
         text-align: center;
         box-sizing: border-box;
         font-size: 18px;
+
         img {
             transition: 0.3s ease-in-out;
             width: 100%;
@@ -112,23 +144,28 @@
             min-height: 145px;
         }
     }
+
     @media (max-width: 1200px) {
         .docs-header-background {
             height: 330px;
         }
     }
+
     @media (max-width: 850px) {
         .docs-homepage-row-column {
             width: 100%;
         }
     }
+
     @media (max-width: 720px) {
         .docs-homepage-row {
             margin: 15px 0;
         }
+
         .docs-introduction {
             flex-direction: column;
         }
+
         .docs-homepage-carousel-row {
             margin: 15px 0;
         }

@@ -7,23 +7,23 @@ const components = [
     },
     {
         name: 'center',
-        imgUrl: '',
+        imgUrl: 'https://v16.material.angular.io/assets/screenshots/input.scene.png',
     },
     {
         name: 'css',
-        imgUrl: '',
+        imgUrl: 'https://v16.material.angular.io/assets/screenshots/slide-toggle.scene.png',
     },
     {
         name: 'position',
-        imgUrl: '',
+        imgUrl: 'https://v16.material.angular.io/assets/screenshots/slider.scene.png',
     },
     {
         name: 'rxjs',
-        imgUrl: '',
+        imgUrl: 'https://v16.material.angular.io/assets/screenshots/slider.scene.png',
     },
     {
         name: 'shadow',
-        imgUrl: '',
+        imgUrl: 'https://v16.material.angular.io/assets/screenshots/slider.scene.png',
     }];
 
 @Component({

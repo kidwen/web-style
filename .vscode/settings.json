@@ -2,5 +2,8 @@
     "prettier.tabWidth": 4,
     "prettier.useTabs": true,
     "editor.minimap.showSlider": "always",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "cSpell.words": [
+        "highlightjs"
+    ]
 }

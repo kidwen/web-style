@@ -13,10 +13,15 @@ import { TankModule } from './tank/tank.module';
 
 registerLocaleData(zh);
 
-@NgModule({ declarations: [
+@NgModule({
+    declarations: [
         AppComponent,
     ],
-    bootstrap: [AppComponent], imports: [RouterModule.forRoot([], { canceledNavigationResolution: 'computed' }),
+    bootstrap: [
+        AppComponent,
+    ],
+    imports: [
+        RouterModule.forRoot([], { canceledNavigationResolution: 'computed' }),
         BrowserModule,
         BrowserAnimationsModule,
         TankModule,
@@ -24,11 +29,14 @@ registerLocaleData(zh);
         FooterModule,
         LayoutModule,
         NavbarModule,
-        MenuNavModule], providers: [
+        MenuNavModule,
+    ],
+    providers: [
         provideHighlightOptions({
             fullLibraryLoader: () => import('highlight.js'),
         }),
         provideHttpClient(withInterceptorsFromDi()),
-    ] })
+    ],
+})
 
 export class AppModule { }

@@ -1,3 +1,6 @@
+<pre>
+    <code [highlight]="code" language="html"></code>
+</pre>
 <section>
     <div *ngIf="user$ | async as user">
         {{ user.id }} {{ user.name }} - used by *ngIf;

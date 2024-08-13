@@ -13,15 +13,14 @@ export class TemplateVariablesComponent {
 
     public user$: Observable<User>;
 
-    public readonly code = `
-    <div *ngIf="user$ | async as user">
-        {{ user.id }} {{ user.name }} - used by *ngIf
-    </div>
+    public readonly code =
+`<div *ngIf="user$ | async as user">
+    {{ user.id }} {{ user.name }} - used by *ngIf
+</div>
 
-    @if (user$ | async; as user) {
-        {{ user.id }} {{ user.name }} - used by @if
-    }
-    `
+@if (user$ | async; as user) {
+    {{ user.id }} {{ user.name }} - used by @if
+}`
 
     public points$: Observable<number>;
 

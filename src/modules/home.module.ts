@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TableModule } from '@kidwen/layout';
-import { Highlight } from 'ngx-highlightjs';
+import { HighlightAuto } from 'ngx-highlightjs';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 import { AnimateComponent } from './animate/animate.component';
 import { CenterComponent } from './center/center.component';
 import { ChildComponent } from './chang-detection/child/child.component';
@@ -28,7 +29,8 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
         MatTabsModule,
         TableModule,
         MatButtonModule,
-        Highlight,
+        HighlightAuto,
+        HighlightLineNumbers,
     ],
     declarations: [
         AnimateComponent,

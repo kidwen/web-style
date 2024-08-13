@@ -34,6 +34,7 @@ registerLocaleData(zh);
     providers: [
         provideHighlightOptions({
             fullLibraryLoader: () => import('highlight.js'),
+            lineNumbersLoader: () => import('ngx-highlightjs/line-numbers'),
         }),
         provideHttpClient(withInterceptorsFromDi()),
     ],

@@ -4,6 +4,7 @@
     "editor.minimap.showSlider": "always",
     "files.insertFinalNewline": true,
     "cSpell.words": [
+        "devkit",
         "highlightjs"
     ]
 }

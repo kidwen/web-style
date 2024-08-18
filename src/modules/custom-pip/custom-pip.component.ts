@@ -8,6 +8,7 @@ import { SubscribePipe } from './custom-pip.pip';
     imports: [CommonModule, SubscribePipe],
     selector: 'app-custom-pip',
     templateUrl: './custom-pip.component.html',
+    styleUrls: ['./custom-pip.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 

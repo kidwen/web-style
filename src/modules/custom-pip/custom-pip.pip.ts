@@ -57,7 +57,6 @@ export class SubscribePipe<T> implements PipeTransform, OnDestroy {
 
     private dispose(): void {
         if (this.sub) {
-            console.log("🚀 ~ SubscribePipe<T> ~ dispose ~ sub:", this.sub)
             this.sub.unsubscribe();
             this.sub = null;
         }

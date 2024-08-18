@@ -12,6 +12,7 @@ import { TableDemoComponent } from './table/table-demo.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 import { AngularResolverParentComponent } from './angular-resolver/components/angular-resolver-parent/angular-resolver-parent.component';
 import { AngularResolverService } from './angular-resolver/services/angular-resolver.service';
+import {CustomPipComponent} from './custom-pip/custom-pip.component';
 
 export const routes: Routes = [
     {
@@ -90,6 +91,14 @@ export const routes: Routes = [
         resolve: [AngularResolverService],
         data: {
             title: 'Angular Resolver',
+        },
+    },
+    {
+        path: 'custom-pipe',
+        component: CustomPipComponent,
+        resolve: [AngularResolverService],
+        data: {
+            title: 'Custom Pipe',
         },
     },
 ];

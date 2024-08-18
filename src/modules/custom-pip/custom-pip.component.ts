@@ -20,7 +20,6 @@ export class CustomPipComponent implements OnInit {
         tap(x => {
             if (x === 10) {
                 this.show = false;
-                console.log("🚀 ~ CustomPipComponent ~ x:", this.show)
             }
         }),
     );

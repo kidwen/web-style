@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { animationFrameScheduler, asyncScheduler, SchedulerAction, Subscription } from 'rxjs';
+import { animationFrameScheduler, asyncScheduler, ReplaySubject, SchedulerAction, Subject, Subscription, takeUntil } from 'rxjs';
 
 let div: HTMLDivElement | null = null;
 
@@ -13,15 +13,39 @@ export class RxjsComponent implements OnInit, OnDestroy {
     @ViewChild('animal', { static: true })
     public animalDiv?: ElementRef; public divContent?: string;
 
+    public sub1: Array<string> = new Array<string>();
+
+    public sub2: Array<string> = new Array<string>();
+
     public sub$?: Subscription;
 
     public animal$?: Subscription;
+
+    public data$: ReplaySubject<string> = new ReplaySubject<string>(2);
+
+    public onDestroy$ = new Subject<void>();
 
     public ngOnInit(): void {
         if (this.animalDiv) {
             div = this.animalDiv.nativeElement as HTMLDivElement;
         }
         this.animal$ = animationFrameScheduler.schedule(addHeight, 0, 0);
+
+        this.data$.next('data 1');
+        this.data$.next('data 2');
+        this.data$.next('data 3');
+
+        this.data$.pipe(takeUntil(this.onDestroy$)).subscribe({
+            next: data => {
+                this.sub1.push(`Subscribe 1: ${data}`);
+            },
+        });
+
+        this.data$.pipe(takeUntil(this.onDestroy$)).subscribe({
+            next: data => {
+                this.sub2.push(`Subscribe 2: ${data}`);
+            },
+        });
     }
 
     public getI(): void {
@@ -33,6 +57,8 @@ export class RxjsComponent implements OnInit, OnDestroy {
     }
 
     public ngOnDestroy(): void {
+        this.onDestroy$.next();
+        this.onDestroy$.complete();
         if (this.sub$) {
             this.sub$.unsubscribe();
         }

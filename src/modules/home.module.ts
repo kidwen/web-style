@@ -10,7 +10,6 @@ import { AnimateComponent } from './animate/animate.component';
 import { CenterComponent } from './center/center.component';
 import { ChildComponent } from './chang-detection/child/child.component';
 import { ParentComponent } from './chang-detection/parent/parent.component';
-import { CssStyleComponent } from './css-style/css-style.component';
 import { directives } from './directives';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -35,7 +34,6 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
     declarations: [
         AnimateComponent,
         CenterComponent,
-        CssStyleComponent,
         HomeComponent,
         PositionComponent,
         RxjsComponent,

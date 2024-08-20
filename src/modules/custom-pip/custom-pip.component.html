@@ -5,6 +5,9 @@
 
 @if(show) {
 <section>
+    <div>use custom pipe: </div>
     value: {{obs$ | subscribe}}
+    <div>use async pipe: </div>
+    value: {{obs$ | async}}
 </section>
 }

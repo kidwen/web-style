@@ -11,42 +11,44 @@ const lazyModules: Routes = [{
     loadChildren: async () => import('src/modules/home.module').then(m => m.HomeModule as any),
 }];
 
-const routes: Routes = [{
-    path: '',
-    component: WelcomeComponent,
-    children: [
-        {
-            path: '',
-            redirectTo: 'docs',
-            pathMatch: 'full',
-        },
-    ],
-}, {
-    path: 'demos',
-    component: MainComponent,
-    children: [
-        {
-            path: '',
-            redirectTo: 'intro',
-            pathMatch: 'full',
-        },
-        {
-            path: 'intro',
-            component: IntroComponent,
-        },
-        ...lazyModules, {
-            path: '404',
-            component: NotFoundComponent,
-        },
-    ],
-}, {
-    path: '404',
-    pathMatch: 'full',
-    component: NotFoundComponent,
-}, {
-    path: '**',
-    redirectTo: '404',
-}];
+const routes: Routes = [
+    {
+        path: '',
+        component: WelcomeComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'docs',
+                pathMatch: 'full',
+            },
+        ],
+    }, {
+        path: 'demos',
+        component: MainComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'intro',
+                pathMatch: 'full',
+            },
+            {
+                path: 'intro',
+                component: IntroComponent,
+            },
+            ...lazyModules, {
+                path: '404',
+                component: NotFoundComponent,
+            },
+        ],
+    }, {
+        path: '404',
+        pathMatch: 'full',
+        component: NotFoundComponent,
+    }, {
+        path: '**',
+        redirectTo: '404',
+    },
+];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

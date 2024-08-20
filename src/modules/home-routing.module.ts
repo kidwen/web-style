@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AnimateComponent } from './animate/animate.component';
 import { CenterComponent } from './center/center.component';
 import { ParentComponent } from './chang-detection/parent/parent.component';
-import { CssStyleComponent } from './css-style/css-style.component';
 import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/ng-component-outlet-complete-example/ng-component-outlet-complete-example.component';
 import { HomeComponent } from './home/home.component';
 import { PositionComponent } from './position/position.component';
@@ -34,13 +33,6 @@ export const routes: Routes = [
         component: CenterComponent,
         data: {
             title: 'Center',
-        },
-    },
-    {
-        path: 'css',
-        component: CssStyleComponent,
-        data: {
-            title: 'Css',
         },
     },
     {

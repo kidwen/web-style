@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { animationFrameScheduler, asyncScheduler, ReplaySubject, SchedulerAction, Subject, Subscription, takeUntil } from 'rxjs';
+import { code } from './rxjs.code';
 
 let div: HTMLDivElement | null = null;
 
@@ -13,25 +14,7 @@ export class RxjsComponent implements OnInit, OnDestroy {
     @ViewChild('animal', { static: true })
     public animalDiv?: ElementRef; public divContent?: string;
 
-    public code =
-`public data$: ReplaySubject<string> = new ReplaySubject<string>(2);
-
-this.data$.next('data 1');
-this.data$.next('data 2');
-this.data$.next('data 3');
-
-this.data$.pipe(takeUntil(this.onDestroy$)).subscribe({
-    next: data => {
-        this.sub1.push(\`Subscribe 1: \${data}\`);
-    },
-});
-
-this.data$.pipe(takeUntil(this.onDestroy$)).subscribe({
-    next: data => {
-        this.sub2.push(\`Subscribe 2: \${data}\`);
-    },
-});
-`;
+    public code = code;
 
     public sub1: Array<string> = new Array<string>();
 
@@ -66,6 +49,19 @@ this.data$.pipe(takeUntil(this.onDestroy$)).subscribe({
                 this.sub2.push(`Subscribe 2: ${data}`);
             },
         });
+
+        const subject = new ReplaySubject(3);
+
+        subject.next(1);
+        subject.next(2);
+        subject.next(3);
+        subject.next(4);
+        subject.subscribe(value => console.log(`Received by Subscriber 1: ${ value }`));
+        subject.next(5);
+        subject.subscribe(value => console.log(`Received by Subscriber 2: ${ value }`));
+        subject.next(6);
+        subject.subscribe(value => console.log(`Received by Subscriber 3: ${ value }`));
+        subject.next(7);
     }
 
     public getI(): void {

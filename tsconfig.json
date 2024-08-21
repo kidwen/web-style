@@ -1,17 +1,3 @@
 {
-    "files": [],
-    "compilerOptions": {
-        "baseUrl": "./",
-        "paths": {
-            "@kidwen/layout": [
-                "/projects/layout/src/public-api.ts"
-            ]
-        }
-    },
-    "references": [
-        {
-            "path": "./tsconfig.app.json",
-            "composite": true
-        },
-    ]
+    "extends": "./tsconfig.app.json"
 }

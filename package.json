@@ -44,7 +44,7 @@
         "@kidwen/eslint-config-angular": "^18.0.0",
         "@nx/angular": "19.5.3",
         "@nx/workspace": "19.6.4",
-        "@schematics/angular": "18.1.2",
+        "@schematics/angular": "18.2.5",
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^5.1.4",
         "@types/jasminewd2": "^2.0.8",

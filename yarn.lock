@@ -208,6 +208,11 @@
   resolved "https://registry.npmmirror.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-18.3.0.tgz#086bf5d529e60a864bbcf3d448ccb9544bfd9b86"
   integrity sha512-v/59FxUKnMzymVce99gV43huxoqXWMb85aKvzlNvLN+ScDu6ZE4YMiTQNpfapVL2lkxhs0uwB3jH17EYd5TcsA==
 
+"@angular-eslint/bundled-angular-compiler@19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-19.0.0.tgz#53260ab328a98ff50726b220de9044d1c4db5c09"
+  integrity sha512-q6IaiqKYcmBW/gw55tytDucguo5E48szVCLNLHUFdN98YDDsP+KM3MPWYPyZcXpusmFfIjLdr8d41PlKmyMUpg==
+
 "@angular-eslint/eslint-plugin-template@18.3.0", "@angular-eslint/eslint-plugin-template@^18.0.0":
   version "18.3.0"
   resolved "https://registry.npmmirror.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-18.3.0.tgz#137ca3934fef6f57fcc6af5810c0984a3c1f71f8"
@@ -225,6 +230,14 @@
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "18.3.0"
     "@angular-eslint/utils" "18.3.0"
+
+"@angular-eslint/eslint-plugin@19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin/-/eslint-plugin-19.0.0.tgz#6ff67221ba64fe6b361e39dbae143e87244aa692"
+  integrity sha512-WkUnH5zmvC/cH6f8BGiRK+KebrKdGbQmhtu3IHLEyzG9U4mBiIV8XkSzhdkY3RCN8bKqhmE5C3oNBLNCtvg4QQ==
+  dependencies:
+    "@angular-eslint/bundled-angular-compiler" "19.0.0"
+    "@angular-eslint/utils" "19.0.0"
 
 "@angular-eslint/schematics@18.3.0", "@angular-eslint/schematics@^18.0.0":
   version "18.3.0"
@@ -251,6 +264,13 @@
   integrity sha512-sCrkHkpxBJZLuCikdboZoawCfc2UgbJv+T14tu2uQCv+Vwzeadnu04vkeY2vTkA8GeBdBij/G9/N/nvwmwVw3g==
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "18.3.0"
+
+"@angular-eslint/utils@19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-19.0.0.tgz#d161e2bbac4cf573fabe19dede5caa1885bdcedc"
+  integrity sha512-PH40BmIcIr5ldr08XYnqJ8cTzJfScJjBym4SECsilBnz5fhCdTD7UEQiW4d0P78Ie8H5PxvOJx9ZE+L4WBNrTA==
+  dependencies:
+    "@angular-eslint/bundled-angular-compiler" "19.0.0"
 
 "@angular/animations@18.2.2":
   version "18.2.2"
@@ -367,10 +387,10 @@
   resolved "https://registry.npmmirror.com/@angular/core/-/core-9.0.0.tgz#227dc53e1ac81824f998c6e76000b7efc522641e"
   integrity sha512-6Pxgsrf0qF9iFFqmIcWmjJGkkCaCm6V5QNnxMy2KloO3SDq6QuMVRbN9RtC8Urmo25LP+eZ6ZgYqFYpdD8Hd9w==
 
-"@angular/forms@18.2.0":
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-18.2.0.tgz#7c30ffa5b4672f9516d933f653a3023f77777433"
-  integrity sha512-G+4BjNCUo4cRwg9NwisGLbtG/1AbIJNOO3RUejPJJbCcAkYMSzmDWSQ+LQEGW4vC/1xaDKO8AT71DI/I09bOxA==
+"@angular/forms@18.2.9":
+  version "18.2.9"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-18.2.9.tgz#38c45347938a7458fc42b74fdea01379a7d9b386"
+  integrity sha512-yyN5dG60CXH6MRte8rv4aGUTeNOMz/pUV7rVxittpjN7tPHfGEL9Xz89Or90Aa1QiHuBmHFk+9A39s03aO1rDQ==
   dependencies:
     tslib "^2.3.0"
 

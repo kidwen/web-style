@@ -75,6 +75,7 @@ export class RxjsComponent implements OnInit, OnDestroy {
     public ngOnDestroy(): void {
         this.onDestroy$.next();
         this.onDestroy$.complete();
+        console.clear();
         if (this.sub$) {
             this.sub$.unsubscribe();
         }

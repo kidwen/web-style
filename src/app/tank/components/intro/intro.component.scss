@@ -1,0 +1,24 @@
+:host(style-intro) {
+    .intro-header {
+        text-align: center;
+        font-size: 32px;
+        margin-top: 12px;
+    }
+
+    .intro-item {
+        a {
+            margin-bottom: 16px;
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 20px;
+            padding-bottom: .2%;
+            transition: background-size 0.6s ease-out;
+            background: linear-gradient(rgb(185, 26, 139), rgb(185, 26, 139)) no-repeat left 123%/0 40%;
+
+            &:hover {
+                text-decoration: none;
+                background-size: 97% 40%;
+            }
+        }
+    }
+}

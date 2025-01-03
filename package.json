@@ -41,7 +41,7 @@
         "@angular-eslint/schematics": "18.3.0",
         "@angular/cli": "~18.1.0",
         "@angular/compiler-cli": "18.1.2",
-        "@angular/language-service": "18.1.2",
+        "@angular/language-service": "19.0.5",
         "@kidwen/eslint-config-angular": "^18.0.0",
         "@nx/angular": "20.3.0",
         "@nx/workspace": "19.6.4",

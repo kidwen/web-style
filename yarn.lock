@@ -9552,6 +9552,11 @@ only@~0.0.2:
   resolved "https://registry.npmmirror.com/only/-/only-0.0.2.tgz#2afde84d03e50b9a8edc444e30610a70295edfb4"
   integrity sha512-Fvw+Jemq5fjjyWz6CpKx6w9s7xxqo3+JCyM0WXWeCSOboZ8ABkyvP8ID4CZuChA/wxSx+XSJmdOm8rGVyJ1hdQ==
 
+open-props@^1.7.10:
+  version "1.7.10"
+  resolved "https://registry.npmmirror.com/open-props/-/open-props-1.7.10.tgz#32eca44c5ad61a41fa238043294818e2a41be66c"
+  integrity sha512-zZPJlr39YbHPou7mQ9GUKz1jiYjWzyZf/0pkPZq4MrtwgZ6FSCnf7hLkvFRGq+RZZ327vGSW3HPc7QMH4FUAZg==
+
 open@10.1.0, open@^10.0.3:
   version "10.1.0"
   resolved "https://registry.npmmirror.com/open/-/open-10.1.0.tgz#a7795e6e5d519abe4286d9937bb24b51122598e1"

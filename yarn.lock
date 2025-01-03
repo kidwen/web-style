@@ -241,6 +241,11 @@
   resolved "https://registry.npmmirror.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-18.4.3.tgz#0810f76045b854782e6370953cf5324112a65f80"
   integrity sha512-zdrA8mR98X+U4YgHzUKmivRU+PxzwOL/j8G7eTOvBuq8GPzsP+hvak+tyxlgeGm9HsvpFj9ERHLtJ0xDUPs8fg==
 
+"@angular-eslint/bundled-angular-compiler@19.0.2":
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-19.0.2.tgz#9308199fda2581953a4a9b8b270dd289b5034c68"
+  integrity sha512-HPmp92r70SNO/0NdIaIhxrgVSpomqryuUk7jszvNRtu+OzYCJGcbLhQD38T3dbBWT/AV0QXzyzExn6/2ai9fEw==
+
 "@angular-eslint/eslint-plugin-template@18.3.0":
   version "18.3.0"
   resolved "https://registry.npmmirror.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-18.3.0.tgz#137ca3934fef6f57fcc6af5810c0984a3c1f71f8"
@@ -258,6 +263,16 @@
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "18.4.3"
     "@angular-eslint/utils" "18.4.3"
+    aria-query "5.3.2"
+    axobject-query "4.1.0"
+
+"@angular-eslint/eslint-plugin-template@19.0.2":
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-19.0.2.tgz#3ef9bccadf4021b231471e701dfb1cdaac5a53c7"
+  integrity sha512-f/OCF9ThnxQ8m0eNYPwnCrySQPhYfCOF6STL7F9LnS8Bs3ZeW3/oT1yLaMIZ1Eg0ogIkgxksMAJZjrJPUPBD1Q==
+  dependencies:
+    "@angular-eslint/bundled-angular-compiler" "19.0.2"
+    "@angular-eslint/utils" "19.0.2"
     aria-query "5.3.2"
     axobject-query "4.1.0"
 
@@ -322,6 +337,13 @@
   integrity sha512-w0bJ9+ELAEiPBSTPPm9bvDngfu1d8JbzUhvs2vU+z7sIz/HMwUZT5S4naypj2kNN0gZYGYrW0lt+HIbW87zTAQ==
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "18.4.3"
+
+"@angular-eslint/utils@19.0.2":
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-19.0.2.tgz#6e435385caa68f752f3ee9f0f9f917f77bf44cad"
+  integrity sha512-HotBT8OKr7zCaX1S9k27JuhRiTVIbbYVl6whlb3uwdMIPIWY8iOcEh1tjI4qDPUafpLfR72Dhwi5bO1E17F3/Q==
+  dependencies:
+    "@angular-eslint/bundled-angular-compiler" "19.0.2"
 
 "@angular/animations@18.2.2":
   version "18.2.2"

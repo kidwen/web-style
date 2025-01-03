@@ -1,5 +1,12 @@
 @if(showPrevArrow){
-<button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-prev" (click)="previous();">
+<button
+    mat-mini-fab
+    tabindex="-1"
+    aria-hidden="true"
+    aria-label="next"
+    class="docs-carousel-nav docs-carousel-nav-prev"
+    (click)="previous()"
+>
     <mat-icon>navigate_before</mat-icon>
 </button>
 }
@@ -10,9 +17,15 @@
     </div>
 </div>
 
-
 @if(showNextArrow) {
-<button mat-mini-fab tabindex="-1" aria-hidden="true" aria-label="next" class="docs-carousel-nav docs-carousel-nav-next" (click)="next();">
+<button
+    mat-mini-fab
+    tabindex="-1"
+    aria-hidden="true"
+    aria-label="next"
+    class="docs-carousel-nav docs-carousel-nav-next"
+    (click)="next()"
+>
     <mat-icon>navigate_next</mat-icon>
 </button>
 }

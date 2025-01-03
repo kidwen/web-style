@@ -31,6 +31,9 @@
 
     .docs-header-headline {
         color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h1 {
             font-size: 56px;

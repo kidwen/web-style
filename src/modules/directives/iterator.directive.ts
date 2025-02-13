@@ -14,9 +14,7 @@ export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> imple
         private container: ViewContainerRef,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         private template: TemplateRef<any>,
-    ) {
-        return;
-    }
+    ) { }
 
     public ngDoCheck(): void {
         if (this.differ) {

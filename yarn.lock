@@ -39,6 +39,14 @@
     "@angular-devkit/core" "18.2.14"
     rxjs "7.8.1"
 
+"@angular-devkit/architect@>= 0.1900.0 < 0.2000.0":
+  version "0.1901.7"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1901.7.tgz#b37c6776ecf16e51be4026b849d42c5315980bdb"
+  integrity sha512-qltyebfbej7joIKZVH8EFfrVDrkw0p9N9ja3A0XeU1sl2vlepHNAQdVm0Os8Vy2XjjyHvT5bXWE3G3/221qEKw==
+  dependencies:
+    "@angular-devkit/core" "19.1.7"
+    rxjs "7.8.1"
+
 "@angular-devkit/architect@~0.1800.0":
   version "0.1800.7"
   resolved "https://registry.npmmirror.com/@angular-devkit/architect/-/architect-0.1800.7.tgz#105aaf62e676b4df2d95ffbec256f899c325847f"
@@ -185,6 +193,18 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
+"@angular-devkit/core@19.1.7", "@angular-devkit/core@>= 19.0.0 < 20.0.0":
+  version "19.1.7"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.1.7.tgz#df2367d6cd4f37950ca812cd4675e6b16f7e9fa5"
+  integrity sha512-q0I6L9KTqyQ7D5M8H+fWLT+yjapvMNb7SRdfU6GzmexO66Dpo83q4HDzuDKIPDF29Yl0ELs9ICJqe9yUXh6yDQ==
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
 "@angular-devkit/schematics@18.1.2":
   version "18.1.2"
   resolved "https://registry.npmmirror.com/@angular-devkit/schematics/-/schematics-18.1.2.tgz#30dd8fad640b6fa5f866638b77108c1b82550e4b"
@@ -218,10 +238,13 @@
     ora "5.4.1"
     rxjs "7.8.1"
 
-"@angular-eslint/builder@18.3.0":
-  version "18.3.0"
-  resolved "https://registry.npmmirror.com/@angular-eslint/builder/-/builder-18.3.0.tgz#e4a62f45c1d2c37572be4018ec2eefd515d1aacc"
-  integrity sha512-httEQyqyBw3+0CRtAa7muFxHrauRfkEfk/jmrh5fn2Eiu+I53hAqFPgrwVi1V6AP/kj2zbAiWhd5xM3pMJdoRQ==
+"@angular-eslint/builder@19.1.0":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-19.1.0.tgz#f78ca8cac90a07b6e8b839e5f453a5ddf0503e36"
+  integrity sha512-LWdQMTES/7GySlpTNFJn3k33ZGmjjWlHI/+IHV7B3xHQ9hj4MPK4ACmE/PNOAIQ9LwQm7sKS+3cTMxOZQ/cvSg==
+  dependencies:
+    "@angular-devkit/architect" ">= 0.1900.0 < 0.2000.0"
+    "@angular-devkit/core" ">= 19.0.0 < 20.0.0"
 
 "@angular-eslint/builder@^18.0.0":
   version "18.4.3"

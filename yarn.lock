@@ -438,10 +438,10 @@
   resolved "https://registry.npmmirror.com/@angular/core/-/core-9.0.0.tgz#227dc53e1ac81824f998c6e76000b7efc522641e"
   integrity sha512-6Pxgsrf0qF9iFFqmIcWmjJGkkCaCm6V5QNnxMy2KloO3SDq6QuMVRbN9RtC8Urmo25LP+eZ6ZgYqFYpdD8Hd9w==
 
-"@angular/forms@18.2.9":
-  version "18.2.9"
-  resolved "https://registry.npmmirror.com/@angular/forms/-/forms-18.2.9.tgz#38c45347938a7458fc42b74fdea01379a7d9b386"
-  integrity sha512-yyN5dG60CXH6MRte8rv4aGUTeNOMz/pUV7rVxittpjN7tPHfGEL9Xz89Or90Aa1QiHuBmHFk+9A39s03aO1rDQ==
+"@angular/forms@19.1.6":
+  version "19.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-19.1.6.tgz#5f4fee699e9bd79301e59b38fcbe04ec3fb8e15b"
+  integrity sha512-uu/76KAwCAcDuhD67Vv78UvOC/tiprtFXOgqNCj0LK8vyFcvPsunb3nF/PtfF9rSHyslXAqxZhME+Ha2tU6Lpw==
   dependencies:
     tslib "^2.3.0"
 
@@ -457,10 +457,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser-dynamic@18.2.0":
-  version "18.2.0"
-  resolved "https://registry.npmmirror.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-18.2.0.tgz#73dd9dfe707fb239ed94b7aedc6203372dfcee67"
-  integrity sha512-izfaXKNC/kqOEzJG8eTnFu39VLI3vv3dTKoYOdEKRB7MTI0t0x66oZmABnHcihtkTSvXs/is+7lA5HmH2ZuIEQ==
+"@angular/platform-browser-dynamic@18.2.13":
+  version "18.2.13"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-18.2.13.tgz#6b649f750d2a3d5b0cfaa5fa289f85841f972102"
+  integrity sha512-kbQCf9+8EpuJC7buBxhSiwBtXvjAwAKh6MznD6zd2pyCYqfY6gfRCZQRtK59IfgVtKmEONWI9grEyNIRoTmqJg==
   dependencies:
     tslib "^2.3.0"
 
@@ -471,10 +471,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@18.2.0":
-  version "18.2.0"
-  resolved "https://registry.npmmirror.com/@angular/router/-/router-18.2.0.tgz#e61c96be0c44590d865eab66209c54b6700d13d1"
-  integrity sha512-6/462hvC3HSwbps8VItECHpkdkiFqRmTKdn1Trik+FjnvdupYrKB6kBsveM3eP+gZD4zyMBMKzBWB9N/xA1clw==
+"@angular/router@18.2.13":
+  version "18.2.13"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-18.2.13.tgz#c846ea8ea09a49fea02bda20daca0b46c66df758"
+  integrity sha512-VKmfgi/r/CkyBq9nChQ/ptmfu0JT/8ONnLVJ5H+SkFLRYJcIRyHLKjRihMCyVm6xM5yktOdCaW73NTQrFz7+bg==
   dependencies:
     tslib "^2.3.0"
 

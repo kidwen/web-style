@@ -12,6 +12,7 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
 import { AngularResolverParentComponent } from './angular-resolver/components/angular-resolver-parent/angular-resolver-parent.component';
 import { AngularResolverService } from './angular-resolver/services/angular-resolver.service';
 import {CustomPipComponent} from './custom-pip/custom-pip.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 export const routes: Routes = [
     {
@@ -91,6 +92,13 @@ export const routes: Routes = [
         resolve: [AngularResolverService],
         data: {
             title: 'Custom Pipe',
+        },
+    },
+    {
+        path: 'accordion',
+        component: AccordionComponent,
+        data: {
+            title: 'Accordion',
         },
     },
 ];

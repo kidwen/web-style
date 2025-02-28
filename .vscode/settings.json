@@ -3,6 +3,7 @@
     "prettier.useTabs": true,
     "editor.minimap.showSlider": "always",
     "files.insertFinalNewline": true,
+    "files.eol": "\n",
     "cSpell.words": [
         "devkit",
         "highlightjs"

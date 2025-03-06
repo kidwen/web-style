@@ -11,11 +11,11 @@
 </button>
 }
 
-<div class="docs-carousel-content-wrapper" role="region">
-    <div class="docs-carousel-content" role="list" tabindex="0" #list>
+<section class="docs-carousel-content-wrapper">
+    <div class="docs-carousel-content" #list>
         <ng-content></ng-content>
     </div>
-</div>
+</section>
 
 @if(showNextArrow) {
 <button

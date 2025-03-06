@@ -1,0 +1,20 @@
+:host(lib-popover) {
+    --position: top;
+    --position-anchor: 1;
+
+    .anchor {
+        position: absolute;
+        left: anchor(var(--position-anchor), center);
+        top: anchor(var(--position-anchor), var(--position));
+        transform: translate(-50%, 5px);
+        // 使用锚点定位实现候补位置
+        position-try-fallbacks: --position-bottom;
+    }
+
+    @position-try --position-bottom {
+        left: anchor(--btn center);
+        bottom: anchor(--btn top);
+        top: unset;
+        margin-bottom: 10px;
+    }
+}

@@ -39,6 +39,14 @@
     "@angular-devkit/core" "18.2.14"
     rxjs "7.8.1"
 
+"@angular-devkit/architect@>= 0.1900.0 < 0.2000.0":
+  version "0.1902.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1902.1.tgz#d0bcb697179a74b78cdb79474864b1060280c38b"
+  integrity sha512-iCm6F4HYO5aIgjzhjOUPKnyFHcn6yVE8gCpjWFQL8JVqrVzFG27vMZ0wK8b8rMDIDt6/hr2FOSSwChVg/cv9GQ==
+  dependencies:
+    "@angular-devkit/core" "19.2.1"
+    rxjs "7.8.1"
+
 "@angular-devkit/architect@~0.1800.0":
   version "0.1800.7"
   resolved "https://registry.npmmirror.com/@angular-devkit/architect/-/architect-0.1800.7.tgz#105aaf62e676b4df2d95ffbec256f899c325847f"
@@ -185,6 +193,18 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
+"@angular-devkit/core@19.2.1", "@angular-devkit/core@>= 19.0.0 < 20.0.0":
+  version "19.2.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.2.1.tgz#59e8e5bf7ea643ade3138545ea21bcb16d094ad2"
+  integrity sha512-DYsoU8emxmBkfIKI693BNUqocwHTVHLjgybyD5nU1qMOH+D/jqEzL5bQbjhUeqeARyrzDg7tyPM5Xno+GsS7KQ==
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
 "@angular-devkit/schematics@18.1.2":
   version "18.1.2"
   resolved "https://registry.npmmirror.com/@angular-devkit/schematics/-/schematics-18.1.2.tgz#30dd8fad640b6fa5f866638b77108c1b82550e4b"
@@ -218,10 +238,13 @@
     ora "5.4.1"
     rxjs "7.8.1"
 
-"@angular-eslint/builder@18.3.0":
-  version "18.3.0"
-  resolved "https://registry.npmmirror.com/@angular-eslint/builder/-/builder-18.3.0.tgz#e4a62f45c1d2c37572be4018ec2eefd515d1aacc"
-  integrity sha512-httEQyqyBw3+0CRtAa7muFxHrauRfkEfk/jmrh5fn2Eiu+I53hAqFPgrwVi1V6AP/kj2zbAiWhd5xM3pMJdoRQ==
+"@angular-eslint/builder@19.2.0":
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-19.2.0.tgz#7876ba1010ad78285e5ac3bc03e3ff312ed671e3"
+  integrity sha512-8Lx24MrMJT8RlgDtwqfiLiJo4DzSaktjco6RmELUdWO2chJgRe9y+2iIgOeB2pmyD9UCsubwsfjBXlrnV/MPhQ==
+  dependencies:
+    "@angular-devkit/architect" ">= 0.1900.0 < 0.2000.0"
+    "@angular-devkit/core" ">= 19.0.0 < 20.0.0"
 
 "@angular-eslint/builder@^18.0.0":
   version "18.4.3"

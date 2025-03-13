@@ -343,10 +343,10 @@
     vite "5.4.0"
     watchpack "2.4.1"
 
-"@angular/cdk@18.2.13":
-  version "18.2.13"
-  resolved "https://registry.npmmirror.com/@angular/cdk/-/cdk-18.2.13.tgz#3d6b7cfa35b8873b419d7a90e3d2e20331cf9f35"
-  integrity sha512-yBKoqcOwmwXnc5phFMEEMO130/Bz9beQLJrKzIS87f6TXaGCeBs4xrPHq2i7Xx/2TqvMiOD9ucjmlVbtGvNG3w==
+"@angular/cdk@18.2.14":
+  version "18.2.14"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-18.2.14.tgz#6114f37a77f2f182de482da2273c70f74a6cc52d"
+  integrity sha512-vDyOh1lwjfVk9OqoroZAP8pf3xxKUvyl+TVR8nJxL4c5fOfUFkD7l94HaanqKSRwJcI2xiztuu92IVoHn8T33Q==
   dependencies:
     tslib "^2.3.0"
   optionalDependencies:
@@ -375,10 +375,10 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@18.2.0":
-  version "18.2.0"
-  resolved "https://registry.npmmirror.com/@angular/common/-/common-18.2.0.tgz#85069eff8f8d37918d6fffb1f3b9fde08a1b4f11"
-  integrity sha512-DELx/QYNqqjmiM+kE5PoVmyG4gPw5WB1bDDeg3hEuBCK3eS2KosgQH0/MQo3OSBZHOcAMFjfHMGqKgxndmYixQ==
+"@angular/common@18.2.9":
+  version "18.2.9"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-18.2.9.tgz#d18727b80279d70908d4d95ff493aacf160cc4f8"
+  integrity sha512-Opi6DVaU0aGyJqLk5jPmeYx559fp3afj4wuxM5aDzV4KEVGDVbNCpO0hMuwHZ6rtCjHhv1fQthgS48qoiQ6LKw==
   dependencies:
     tslib "^2.3.0"
 

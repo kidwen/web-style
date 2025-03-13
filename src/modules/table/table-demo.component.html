@@ -1,1 +1,16 @@
-<table lib-table></table>
+<table lib-table [border]="1" [cellSpacing]="0" [cellPadding]="10">
+    <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+    </thead>
+    <tbody>
+        @for (item of users(); track $index) {
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.age }}</td>
+        </tr>
+        }
+    </tbody>
+</table>

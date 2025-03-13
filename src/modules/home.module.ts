@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TableModule } from '@kidwen/layout';
+import { TableModule, PopoverModule } from '@kidwen/layout';
 import { HighlightAuto } from 'ngx-highlightjs';
 import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 import { AnimateComponent } from './animate/animate.component';
@@ -19,6 +19,8 @@ import { TableDemoComponent } from './table/table-demo.component';
 import { CompleteComponent } from './dynamic-component/complete/complete.component';
 import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/ng-component-outlet-complete-example/ng-component-outlet-complete-example.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { PopoverDemoComponent } from './popover-demo/popover-demo.component';
 
 @NgModule({
     imports: [
@@ -30,6 +32,7 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
         MatButtonModule,
         HighlightAuto,
         HighlightLineNumbers,
+        PopoverModule,
     ],
     declarations: [
         AnimateComponent,
@@ -43,6 +46,8 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
         CompleteComponent,
         NgComponentOutletCompleteExampleComponent,
         TemplateVariablesComponent,
+        AccordionComponent,
+        PopoverDemoComponent,
         ...directives,
     ],
 })

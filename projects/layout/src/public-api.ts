@@ -7,3 +7,4 @@ export * from './modules/menu-nav';
 export * from './modules/footer';
 export * from './modules/carousel';
 export * from './modules/table';
+export * from './modules/popover';

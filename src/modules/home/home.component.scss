@@ -30,6 +30,7 @@
         top: -60px;
 
         &::before {
+            box-sizing: content-box;
             content: "";
             position: absolute;
             width: 100px;
@@ -44,6 +45,7 @@
         }
 
         &::after {
+            box-sizing: content-box;
             content: "";
             position: absolute;
             width: 140px;

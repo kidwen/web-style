@@ -1,0 +1,19 @@
+:host(app-table-demo) {
+    table {
+        border-color: red;
+        border-collapse: collapse;
+        width: 400px;
+    }
+
+    th {
+        font-weight: 600;
+        color: #333;
+        font-size: 16px;
+        margin: 0;
+        text-align: left;
+    }
+
+    td {
+        color: #666;
+    }
+}

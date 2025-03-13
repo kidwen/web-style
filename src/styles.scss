@@ -1,10 +1,29 @@
+// 动画样式
 @import "~animate.css/animate.min.css";
+// 代码高亮样式
 @import "~highlight.js/styles/github-dark.css";
+
+/* the props */
+@import "open-props/open-props.min.css";
+
+/* optional imports that use the props */
+@import "open-props/normalize.min.css";
+@import "open-props/buttons.min.css";
+
+/* individual imports */
+@import "open-props/indigo.min.css";
+@import "open-props/easings.min.css";
+@import "open-props/animations.min.css";
+@import "open-props/sizes.min.css";
+@import "open-props/gradients.min.css";
+/* see PropPacks for the full list */
 
 html,
 body {
     height: 100%;
     --mdc-text-button-label-text-color: #ffffff;
+    --size-0: 0;
+    background-color: #ffffff;
 }
 body {
     margin: 0;
@@ -30,4 +49,10 @@ a.docs-link {
 
 .docs-homepage-promo a {
     text-decoration: none;
+}
+:where(.btn,button,input:is([type=button],[type=submit],[type=reset])), :where(input[type=file])::-webkit-file-upload-button, :where(input[type=file])::file-selector-button {
+    gap: var(--size-0);
+}
+:where(h2) {
+    max-inline-size: var(--size-header-3);
 }

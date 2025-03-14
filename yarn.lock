@@ -465,10 +465,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@18.2.13":
-  version "18.2.13"
-  resolved "https://registry.npmmirror.com/@angular/router/-/router-18.2.13.tgz#c846ea8ea09a49fea02bda20daca0b46c66df758"
-  integrity sha512-VKmfgi/r/CkyBq9nChQ/ptmfu0JT/8ONnLVJ5H+SkFLRYJcIRyHLKjRihMCyVm6xM5yktOdCaW73NTQrFz7+bg==
+"@angular/router@19.2.2":
+  version "19.2.2"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-19.2.2.tgz#9930f526d95a3d95eadc4d3d2b7939d20a42119f"
+  integrity sha512-H0JEN1cs7uX++piCyT2gfhgqONceCKbRRZq+zr1T61c5heAi2pBGHuuZnU0D1d0sgA82CGcWFrTduUJg5wWamw==
   dependencies:
     tslib "^2.3.0"
 

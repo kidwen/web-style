@@ -205,10 +205,10 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/core@19.2.2", "@angular-devkit/core@>= 19.0.0 < 20.0.0":
-  version "19.2.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.2.2.tgz#9aeb345ad4f17f355dc406a42b64d3bc36677f24"
-  integrity sha512-5vtx5c2jLgl18TFze0fYhpkw8lWTtRoaiH5WPJ98AR2tENw657Hb5Viudc9MicySpWnPrPxgNCzRGjODyHLcjQ==
+"@angular-devkit/core@19.2.7", "@angular-devkit/core@>= 19.0.0 < 20.0.0":
+  version "19.2.7"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.2.7.tgz#f8a53906801b486a596038dd3e40d1276ffe4ce5"
+  integrity sha512-WeX/7HuNooJ4UhvVdremj6it0cX3nreG0/5r3QfrQd5Tz3sCHnh/lO5TW31gHtSqVgPjBGmzSzsyZ1Mi0lI7FA==
   dependencies:
     ajv "8.17.1"
     ajv-formats "3.0.1"

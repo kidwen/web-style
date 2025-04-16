@@ -4,8 +4,8 @@
     "scripts": {
         "ng": "nx --version",
         "start": "nx serve --hmr",
-        "build": "nx exec -- yarn _build ",
-        "build:layout": "nx exec -- nx build layout",
+        "build": "nx exec -- _build",
+        "build:layout": "nx build layout",
         "lint": "nx run-many --all --target=lint",
         "_build": "npm run build:layout && nx build",
         "deploy": "npm run ng deploy --base-href=/web-style/",

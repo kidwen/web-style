@@ -56,3 +56,16 @@ a.docs-link {
 :where(h2) {
     max-inline-size: var(--size-header-3);
 }
+
+[data-theme='dark_mode'] {
+    filter: invert(1) hue-rotate(180deg);
+
+    img,
+    video,
+    .avatar,
+    .image,
+    .thumb
+    .icon {
+      filter: invert(1) hue-rotate(180deg);
+    }
+}

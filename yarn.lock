@@ -250,10 +250,10 @@
     ora "5.4.1"
     rxjs "7.8.1"
 
-"@angular-eslint/builder@19.2.1":
-  version "19.2.1"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-19.2.1.tgz#3c15c244e25f89abf6986752c3cf571e85544a50"
-  integrity sha512-iBs/4ZpjyISBFYU+dbfJOJi4Efh7U1hXPgQwaebU9r9Y4dMdcTw7MsaG9MfJX1gQJkIeXasYTxfSfuqoMFl9nQ==
+"@angular-eslint/builder@19.6.0":
+  version "19.6.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-19.6.0.tgz#5b8b58f3a2e1cc22138364c69818b44598fc18be"
+  integrity sha512-hUdYS1mSB09b5ABi2tuWeMTVprYHW+x6KmeAFJfXC6aMOa4NYQBdetIjOLwr7qUDlq1S/+2+HiX/FO76FPHClw==
   dependencies:
     "@angular-devkit/architect" ">= 0.1900.0 < 0.2000.0"
     "@angular-devkit/core" ">= 19.0.0 < 20.0.0"

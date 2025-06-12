@@ -205,7 +205,19 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/core@19.2.2", "@angular-devkit/core@>= 19.0.0 < 20.0.0":
+"@angular-devkit/core@19.2.15", "@angular-devkit/core@>= 19.0.0 < 20.0.0":
+  version "19.2.15"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.2.15.tgz#35af566f9c69d3eca9c183936ee8527d9725a006"
+  integrity sha512-pU2RZYX6vhd7uLSdLwPnuBcr0mXJSjp3EgOXKsrlQFQZevc+Qs+2JdXgIElnOT/aDqtRtriDmLlSbtdE8n3ZbA==
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/core@19.2.2":
   version "19.2.2"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.2.2.tgz#9aeb345ad4f17f355dc406a42b64d3bc36677f24"
   integrity sha512-5vtx5c2jLgl18TFze0fYhpkw8lWTtRoaiH5WPJ98AR2tENw657Hb5Viudc9MicySpWnPrPxgNCzRGjODyHLcjQ==
@@ -236,6 +248,17 @@
     "@angular-devkit/core" "18.1.4"
     jsonc-parser "3.3.1"
     magic-string "0.30.10"
+    ora "5.4.1"
+    rxjs "7.8.1"
+
+"@angular-devkit/schematics@19.2.15":
+  version "19.2.15"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-19.2.15.tgz#d20ceba32f97b5f0e07e25268d9b8fea7ee142dd"
+  integrity sha512-kNOJ+3vekJJCQKWihNmxBkarJzNW09kP5a9E1SRNiQVNOUEeSwcRR0qYotM65nx821gNzjjhJXnAZ8OazWldrg==
+  dependencies:
+    "@angular-devkit/core" "19.2.15"
+    jsonc-parser "3.3.1"
+    magic-string "0.30.17"
     ora "5.4.1"
     rxjs "7.8.1"
 
@@ -8692,7 +8715,7 @@ magic-string@0.30.11:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
 
-magic-string@~0.30.2:
+magic-string@0.30.17, magic-string@~0.30.2:
   version "0.30.17"
   resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.30.17.tgz#450a449673d2460e5bbcfba9a61916a1714c7453"
   integrity sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==

@@ -46,7 +46,7 @@
         "@types/estree": "^1.0.0",
         "@types/jasmine": "^5.1.4",
         "@types/jasminewd2": "^2.0.8",
-        "@types/node": "22.9.1",
+        "@types/node": "24.0.7",
         "angular-cli-ghpages": "^2.0.1",
         "jasmine-core": "^5.1.0",
         "jasmine-spec-reporter": "^7.0.0",

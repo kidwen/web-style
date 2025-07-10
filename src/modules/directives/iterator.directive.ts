@@ -3,6 +3,7 @@ import { Directive, DoCheck, Input, IterableChangeRecord, IterableChanges, Itera
 
 @Directive({
     selector: '[styleForOf]',
+    standalone: true,
 })
 export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> implements DoCheck {
     @Input('styleForOf')

@@ -1,15 +1,25 @@
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { routes } from '../../../../modules/home-routing.module';
+import { MatSidenavContainer } from '@angular/material/sidenav';
+import { MenuNavComponent } from '../../../../../projects/layout/src/modules/menu-nav/menu-nav.component';
+import { FooterComponent } from '../../../../../projects/layout/src/modules/footer/footer.component';
 
 @Component({
     selector: 'style-main',
     templateUrl: './main.component.html',
     styleUrls: ['./main.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [
+        MatSidenavContainer,
+        MenuNavComponent,
+        RouterOutlet,
+        FooterComponent,
+    ],
 })
 export class MainComponent implements OnDestroy {
 

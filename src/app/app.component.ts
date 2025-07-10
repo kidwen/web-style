@@ -1,11 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonProperty } from '@kidwen/layout';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'style-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [RouterOutlet],
 })
 export class AppComponent {
     public title: string = 'style-app';

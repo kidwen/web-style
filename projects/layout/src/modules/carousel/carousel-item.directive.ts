@@ -3,6 +3,7 @@ import { Directive, HostBinding, ElementRef } from "@angular/core";
 
 @Directive({
     selector: '[carousel-item]',
+    standalone: true,
 })
 export class CarouselItem implements FocusableOption {
     @HostBinding('attr.role')

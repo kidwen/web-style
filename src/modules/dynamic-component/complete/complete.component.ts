@@ -6,6 +6,7 @@ import { GreeterDirective } from '../../directives/greeter.directive';
     styleUrls: ['./complete.component.scss'],
     templateUrl: './complete.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 
 export class CompleteComponent {

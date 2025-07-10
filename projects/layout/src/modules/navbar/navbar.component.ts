@@ -1,4 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { MatAnchor } from '@angular/material/button';
+import { RouterLink } from '@angular/router';
+import { MatIcon } from '@angular/material/icon';
 import { MatButtonProperty } from '../../model/mat-button.model';
 
 @Component({
@@ -6,6 +9,12 @@ import { MatButtonProperty } from '../../model/mat-button.model';
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [
+        MatAnchor,
+        RouterLink,
+        MatIcon,
+    ],
 })
 
 export class NavbarComponent {

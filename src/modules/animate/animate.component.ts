@@ -5,6 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     templateUrl: './animate.component.html',
     styleUrls: ['./animate.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 
 export class AnimateComponent {

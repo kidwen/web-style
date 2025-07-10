@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component, ContentChildren, ElementRef, QueryList, ViewChild } from '@angular/core';
+import { MatMiniFabButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 import { CarouselItem } from './carousel-item.directive';
 
 @Component({
@@ -6,6 +8,8 @@ import { CarouselItem } from './carousel-item.directive';
     templateUrl: './carousel.component.html',
     styleUrls: ['./carousel.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [MatMiniFabButton, MatIcon],
 })
 
 export class CarouselComponent {

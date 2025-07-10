@@ -1,4 +1,11 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { MatAnchor } from '@angular/material/button';
+import { MatDivider } from '@angular/material/divider';
+import { RouterLink } from '@angular/router';
+import { MatIcon } from '@angular/material/icon';
+import { CarouselComponent } from '../../../../../projects/layout/src/modules/carousel/carousel.component';
+import { CarouselItem } from '../../../../../projects/layout/src/modules/carousel/carousel-item.directive';
+import { FooterComponent } from '../../../../../projects/layout/src/modules/footer/footer.component';
 
 const components = [
     {
@@ -31,6 +38,16 @@ const components = [
     templateUrl: './welcome.component.html',
     styleUrls: ['./welcome.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [
+        MatAnchor,
+        MatDivider,
+        RouterLink,
+        MatIcon,
+        CarouselComponent,
+        CarouselItem,
+        FooterComponent,
+    ],
 })
 
 export class WelcomeComponent implements OnInit {

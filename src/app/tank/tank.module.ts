@@ -6,7 +6,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { FooterModule, MenuNavModule, CarouselModule, PopoverModule } from '@kidwen/layout';
+
 import { IntroComponent } from './components/intro/intro.component';
 import { MainComponent } from './components/main/main.component';
 import { NotFoundComponent } from './components/not-found/not-fount.component';
@@ -15,25 +15,19 @@ import { TankRoutingModule } from './tank-routing.module';
 
 @NgModule({
     imports: [
-        TankRoutingModule,
-        MatListModule,
-        FormsModule,
-        CommonModule,
-        MenuNavModule,
-        FooterModule,
-        MatSidenavModule,
-        MatButtonModule,
-        MatDividerModule,
-        MatIconModule,
-        CarouselModule,
-        PopoverModule,
-    ],
-    declarations: [
-        MainComponent,
-        NotFoundComponent,
-        WelcomeComponent,
-        IntroComponent,
-    ],
+    TankRoutingModule,
+    MatListModule,
+    FormsModule,
+    CommonModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MainComponent,
+    NotFoundComponent,
+    WelcomeComponent,
+    IntroComponent,
+],
     exports: [],
 })
 

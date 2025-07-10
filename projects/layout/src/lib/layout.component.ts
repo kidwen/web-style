@@ -7,9 +7,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
             layout works!
         </p>
     `,
-    styles: [
-    ],
+    styles: [],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class LayoutComponent implements OnInit {
 

@@ -5,6 +5,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnIni
     templateUrl: './not-fount.component.html',
     styleUrls: ['./not-fount.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class NotFoundComponent implements OnInit, OnDestroy {
     public countDown: number = 5;

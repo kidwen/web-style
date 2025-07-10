@@ -19,6 +19,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         ]),
     ],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class PositionComponent {
     public container: HTMLDivElement | null = null;

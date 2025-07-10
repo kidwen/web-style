@@ -1,17 +1,18 @@
 <pre>
-    <code [highlightAuto]="code" lineNumbers></code>
+  <code [highlightAuto]="code" lineNumbers></code>
 </pre>
 <section>
-    <div *ngIf="user$ | async as user">
-        {{ user.id }} {{ user.name }} - used by *ngIf;
-    </div>
-
     @if (user$ | async; as user) {
-    {{ user.id }} {{ user.name }} - used by &#64;if;
+        <div>{{ user.id }} {{ user.name }} - used by *ngIf;</div>
+    } 
+    @if (user$ | async; as user) {
+       {{ user.id }} {{ user.name }} - used by &#64;if; 
     }
     @let points = (points$ | async) ?? 0;
-    <div class="use-let">Use &#64;let declare var `points` {{points}}</div>
-    @for (item of [1,2,3]; track $index) {
-        The {{item}} item;
+    <div class="use-let">
+        Use &#64;let declare var `points` {{ points }}
+    </div>
+    @for (item of [1,2,3]; track $index) { 
+        The {{ item }} item; 
     }
 </section>

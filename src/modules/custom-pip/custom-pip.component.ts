@@ -1,11 +1,12 @@
-import { CommonModule } from '@angular/common';
+
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Observable, interval, of, tap } from 'rxjs';
+import { AsyncPipe } from '@angular/common';
 import { SubscribePipe } from './custom-pip.pip';
 
 @Component({
     standalone: true,
-    imports: [CommonModule, SubscribePipe],
+    imports: [SubscribePipe, AsyncPipe],
     selector: 'app-custom-pip',
     templateUrl: './custom-pip.component.html',
     styleUrls: ['./custom-pip.component.scss'],

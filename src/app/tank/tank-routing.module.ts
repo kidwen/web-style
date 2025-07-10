@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
-
-
-
 const lazyModules: Routes = [{
     path: '',
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -35,7 +31,8 @@ const routes: Routes = [
                 path: 'intro',
                 loadComponent: () => import('./components/intro/intro.component').then(m => m.IntroComponent),
             },
-            ...lazyModules, {
+            ...lazyModules,
+            {
                 path: '404',
                 loadComponent: () => import('./components/not-found/not-fount.component').then(m => m.NotFoundComponent),
             },

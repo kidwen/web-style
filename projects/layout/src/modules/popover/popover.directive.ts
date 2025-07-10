@@ -5,6 +5,7 @@ import { PopoverComponent } from './popover.component';
 
 @Directive({
     selector: '[libPopover]',
+    standalone: true,
 })
 export class PopoverDirective {
 

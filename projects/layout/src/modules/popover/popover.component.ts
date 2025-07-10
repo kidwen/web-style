@@ -4,6 +4,7 @@ import { Component, Input } from '@angular/core';
     selector: 'lib-popover',
     templateUrl: './popover.component.html',
     styleUrls: ['./popover.component.scss'],
+    standalone: true,
 })
 
 export class PopoverComponent {

@@ -1,5 +1,8 @@
 import { ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { animationFrameScheduler, asyncScheduler, ReplaySubject, SchedulerAction, Subject, Subscription, takeUntil } from 'rxjs';
+import { HighlightAuto } from 'ngx-highlightjs';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
+import { JsonPipe } from '@angular/common';
 import { code } from './rxjs.code';
 
 let div: HTMLDivElement | null = null;
@@ -9,6 +12,12 @@ let div: HTMLDivElement | null = null;
     templateUrl: './rxjs.component.html',
     styleUrls: ['./rxjs.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [
+        HighlightAuto,
+        HighlightLineNumbers,
+        JsonPipe,
+    ],
 })
 export class RxjsComponent implements OnInit, OnDestroy {
     @ViewChild('animal', { static: true })

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Injector } from '@angular/core';
 import { GreeterDirective } from 'src/modules/directives/greeter.directive';
+import { NgComponentOutlet } from '@angular/common';
 import { CompleteComponent } from '../complete/complete.component';
 
 @Component({
@@ -7,6 +8,8 @@ import { CompleteComponent } from '../complete/complete.component';
     templateUrl: './ng-component-outlet-complete-example.component.html',
     styleUrls: ['./ng-component-outlet-complete-example.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [NgComponentOutlet],
 })
 
 export class NgComponentOutletCompleteExampleComponent {

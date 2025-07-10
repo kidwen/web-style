@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TableModule, PopoverModule } from '@kidwen/layout';
+
 import { HighlightAuto } from 'ngx-highlightjs';
 import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
 import { AnimateComponent } from './animate/animate.component';
@@ -24,31 +24,27 @@ import { PopoverDemoComponent } from './popover-demo/popover-demo.component';
 
 @NgModule({
     imports: [
-        CommonModule,
-        HomeRoutingModule,
-        FormsModule,
-        MatTabsModule,
-        TableModule,
-        MatButtonModule,
-        HighlightAuto,
-        HighlightLineNumbers,
-        PopoverModule,
-    ],
-    declarations: [
-        AnimateComponent,
-        CenterComponent,
-        HomeComponent,
-        PositionComponent,
-        RxjsComponent,
-        TableDemoComponent,
-        ParentComponent,
-        ChildComponent,
-        CompleteComponent,
-        NgComponentOutletCompleteExampleComponent,
-        TemplateVariablesComponent,
-        AccordionComponent,
-        PopoverDemoComponent,
-        ...directives,
-    ],
+    CommonModule,
+    HomeRoutingModule,
+    FormsModule,
+    MatTabsModule,
+    MatButtonModule,
+    HighlightAuto,
+    HighlightLineNumbers,
+    AnimateComponent,
+    CenterComponent,
+    HomeComponent,
+    PositionComponent,
+    RxjsComponent,
+    TableDemoComponent,
+    ParentComponent,
+    ChildComponent,
+    CompleteComponent,
+    NgComponentOutletCompleteExampleComponent,
+    TemplateVariablesComponent,
+    AccordionComponent,
+    PopoverDemoComponent,
+    ...directives,
+],
 })
 export class HomeModule { }

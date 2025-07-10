@@ -6,6 +6,7 @@ import { User } from 'src/models/user.model';
     templateUrl: './child.component.html',
     styleUrls: ['./child.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
 })
 export class ChildComponent {
     @Input()

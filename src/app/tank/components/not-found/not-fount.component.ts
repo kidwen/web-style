@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angular/core';
 
 @Component({
     selector: 'style-not-fount',
@@ -8,13 +8,11 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnIni
     standalone: true,
 })
 export class NotFoundComponent implements OnInit, OnDestroy {
+    private cdr = inject(ChangeDetectorRef);
+
     public countDown: number = 5;
 
     private intervalId?: number;
-
-    public constructor(
-        private cdr: ChangeDetectorRef,
-    ) { }
 
     public ngOnInit(): void {
         this.intervalId = window.setInterval(() => {

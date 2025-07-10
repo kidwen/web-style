@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { GreeterDirective } from '../../directives/greeter.directive';
 
 @Component({
@@ -10,7 +10,6 @@ import { GreeterDirective } from '../../directives/greeter.directive';
 })
 
 export class CompleteComponent {
-    public constructor(public greeter: GreeterDirective) {
-        return;
-    }
+    public greeter = inject(GreeterDirective);
+
 }

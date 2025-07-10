@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Injector } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Injector, inject } from '@angular/core';
 import { GreeterDirective } from 'src/modules/directives/greeter.directive';
 import { NgComponentOutlet } from '@angular/common';
 import { CompleteComponent } from '../complete/complete.component';
@@ -13,11 +13,13 @@ import { CompleteComponent } from '../complete/complete.component';
 })
 
 export class NgComponentOutletCompleteExampleComponent {
+    private injector = inject(Injector);
+
     public completeComponent = CompleteComponent;
     public myInjector: Injector;
     public myContent = [[document.createTextNode('Ahoj')], [document.createTextNode('Svet')]];
 
-    public constructor(private injector: Injector) {
+    public constructor() {
         this.myInjector = Injector.create({ providers: [{ provide: GreeterDirective, deps: [] }], parent: this.injector });
     }
 }

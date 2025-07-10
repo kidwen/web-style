@@ -1,4 +1,4 @@
-import { ComponentRef, Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import { ComponentRef, Directive, Input, TemplateRef, ViewContainerRef, inject } from '@angular/core';
 import { fromEvent } from 'rxjs';
 import { PopoverPosition } from '../../model';
 import { PopoverComponent } from './popover.component';
@@ -8,6 +8,9 @@ import { PopoverComponent } from './popover.component';
     standalone: true,
 })
 export class PopoverDirective {
+    private readonly viewContainerRef = inject(ViewContainerRef);
+    private readonly templateRef = inject<TemplateRef<Element>>(TemplateRef);
+
 
     @Input()
     public content: string;
@@ -22,11 +25,6 @@ export class PopoverDirective {
     public position: PopoverPosition = 'top';
 
     private componentRef: ComponentRef<PopoverComponent>;
-
-    public constructor(
-        private readonly viewContainerRef: ViewContainerRef,
-        private readonly templateRef: TemplateRef<Element>,
-    ) { }
 
     public ngOnInit(): void {
         const embeddedViewRef = this.viewContainerRef.createEmbeddedView(this.templateRef);

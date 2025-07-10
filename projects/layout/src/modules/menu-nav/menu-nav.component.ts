@@ -1,4 +1,4 @@
-import { AfterContentInit, ChangeDetectionStrategy, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
+import { AfterContentInit, ChangeDetectionStrategy, Component, EventEmitter, Input, OnDestroy, Output, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -19,6 +19,8 @@ import { MatButtonProperty } from '../../model/mat-button.model';
 })
 
 export class MenuNavComponent implements AfterContentInit, OnDestroy {
+    private router = inject(Router);
+
     @Input()
     public links?: Array<MatButtonProperty>;
 
@@ -32,9 +34,7 @@ export class MenuNavComponent implements AfterContentInit, OnDestroy {
 
     private sub?: Subscription;
 
-    public constructor(
-        private router: Router,
-    ) {
+    public constructor() {
         this.sub = this.router.events.pipe(
             filter((e): e is NavigationEnd => e instanceof NavigationEnd),
         ).subscribe(e => {

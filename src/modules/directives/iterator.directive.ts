@@ -1,21 +1,19 @@
 /* eslint-disable max-classes-per-file */
-import { Directive, DoCheck, Input, IterableChangeRecord, IterableChanges, IterableDiffer, NgIterable, TemplateRef, ViewContainerRef, ViewRef } from '@angular/core';
+import { Directive, DoCheck, Input, IterableChangeRecord, IterableChanges, IterableDiffer, NgIterable, TemplateRef, ViewContainerRef, ViewRef, inject } from '@angular/core';
 
 @Directive({
     selector: '[styleForOf]',
     standalone: true,
 })
 export class IteratorDirective<T, U extends NgIterable<T> = NgIterable<T>> implements DoCheck {
+    private container = inject(ViewContainerRef);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    private template = inject<TemplateRef<any>>(TemplateRef);
+
     @Input('styleForOf')
     public dataSource: NgIterable<T> = new Array<T>();
 
     private differ: IterableDiffer<T> | null = null;
-
-    public constructor(
-        private container: ViewContainerRef,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        private template: TemplateRef<any>,
-    ) { }
 
     public ngDoCheck(): void {
         if (this.differ) {

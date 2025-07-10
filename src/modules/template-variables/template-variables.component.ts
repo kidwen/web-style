@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { User } from 'src/models';
 import { UserService } from 'src/services';
@@ -15,13 +15,15 @@ import { code } from './template-variables.code';
     imports: [HighlightAuto, HighlightLineNumbers, AsyncPipe],
 })
 export class TemplateVariablesComponent {
+    private userService = inject(UserService);
+
     public user$: Observable<User>;
 
     public readonly code = code;
 
     public points$: Observable<number>;
 
-    public constructor(private userService: UserService) {
+    public constructor() {
         this.user$ = this.userService.getUser();
         this.points$ = of(0);
     }

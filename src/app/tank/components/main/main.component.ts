@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
@@ -22,6 +22,8 @@ import { FooterComponent } from '../../../../../projects/layout/src/modules/foot
     ],
 })
 export class MainComponent implements OnDestroy {
+    private router = inject(Router);
+
 
     public links: Array<MatButtonProperty> = new Array<MatButtonProperty>();
 
@@ -29,9 +31,7 @@ export class MainComponent implements OnDestroy {
 
     private sub?: Subscription;
 
-    public constructor(
-        private router: Router,
-    ) {
+    public constructor() {
         this.sub = this.router.events.pipe(
             filter((e): e is NavigationEnd => e instanceof NavigationEnd),
         ).subscribe(e => {

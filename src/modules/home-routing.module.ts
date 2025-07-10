@@ -1,87 +1,74 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AnimateComponent } from './animate/animate.component';
-import { CenterComponent } from './center/center.component';
-import { ParentComponent } from './chang-detection/parent/parent.component';
-import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/ng-component-outlet-complete-example/ng-component-outlet-complete-example.component';
-import { HomeComponent } from './home/home.component';
-import { PositionComponent } from './position/position.component';
-import { RxjsComponent } from './rxjs/rxjs.component';
-import { TableDemoComponent } from './table/table-demo.component';
-import { TemplateVariablesComponent } from './template-variables/template-variables.component';
-import { AngularResolverParentComponent } from './angular-resolver/components/angular-resolver-parent/angular-resolver-parent.component';
 import { AngularResolverService } from './angular-resolver/services/angular-resolver.service';
-import { CustomPipComponent } from './custom-pip/custom-pip.component';
-import { AccordionComponent } from './accordion/accordion.component';
-import { PopoverDemoComponent } from './popover-demo/popover-demo.component';
 
 export const routes: Routes = [
     {
         path: 'animate',
-        component: AnimateComponent,
+        loadComponent: () => import('./animate/animate.component').then(m => m.AnimateComponent),
         data: {
             title: 'Animate',
         },
     },
     {
         path: 'position',
-        component: PositionComponent,
+        loadComponent: () => import('./position/position.component').then(m => m.PositionComponent),
         data: {
             title: 'Position',
         },
     },
     {
         path: 'center',
-        component: CenterComponent,
+        loadComponent: () => import('./center/center.component').then(m => m.CenterComponent),
         data: {
             title: 'Center',
         },
     },
     {
         path: 'rxjs',
-        component: RxjsComponent,
+        loadComponent: () => import('./rxjs/rxjs.component').then(m => m.RxjsComponent),
         data: {
             title: 'Rxjs',
         },
     },
     {
         path: 'shadow',
-        component: HomeComponent,
+        loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
         data: {
             title: 'Shadow',
         },
     },
     {
         path: 'table',
-        component: TableDemoComponent,
+        loadComponent: () => import('./table/table-demo.component').then(m => m.TableDemoComponent),
         data: {
             title: 'Table',
         },
     },
     {
         path: 'change-detection',
-        component: ParentComponent,
+        loadComponent: () => import('./chang-detection/parent/parent.component').then(m => m.ParentComponent),
         data: {
             title: 'ChangeDetection',
         },
     },
     {
         path: 'dynamic-component',
-        component: NgComponentOutletCompleteExampleComponent,
+        loadComponent: () => import('./dynamic-component/ng-component-outlet-complete-example/ng-component-outlet-complete-example.component').then(m => m.NgComponentOutletCompleteExampleComponent),
         data: {
             title: 'Dynamic Component',
         },
     },
     {
         path: 'template-variables',
-        component: TemplateVariablesComponent,
+        loadComponent: () => import('./template-variables/template-variables.component').then(m => m.TemplateVariablesComponent),
         data: {
             title: 'Template Variables',
         },
     },
     {
         path: 'angular-resolver',
-        component: AngularResolverParentComponent,
+        loadComponent: () => import('./angular-resolver/components/angular-resolver-parent/angular-resolver-parent.component').then(m => m.AngularResolverParentComponent),
         resolve: [AngularResolverService],
         data: {
             title: 'Angular Resolver',
@@ -89,7 +76,7 @@ export const routes: Routes = [
     },
     {
         path: 'custom-pipe',
-        component: CustomPipComponent,
+        loadComponent: () => import('./custom-pip/custom-pip.component').then(m => m.CustomPipComponent),
         resolve: [AngularResolverService],
         data: {
             title: 'Custom Pipe',
@@ -97,14 +84,14 @@ export const routes: Routes = [
     },
     {
         path: 'accordion',
-        component: AccordionComponent,
+        loadComponent: () => import('./accordion/accordion.component').then(m => m.AccordionComponent),
         data: {
             title: 'Accordion',
         },
     },
     {
         path: 'popover-demo',
-        component: PopoverDemoComponent,
+        loadComponent: () => import('./popover-demo/popover-demo.component').then(m => m.PopoverDemoComponent),
         data: {
             title: 'Popover Demo',
         },

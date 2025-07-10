@@ -3,8 +3,8 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { MatButtonProperty } from '@kidwen/layout';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { routes } from '../../../../modules/home-routing.module';
 import { MatSidenavContainer } from '@angular/material/sidenav';
+import { routes } from '../../../../modules/home-routing.module';
 import { MenuNavComponent } from '../../../../../projects/layout/src/modules/menu-nav/menu-nav.component';
 import { FooterComponent } from '../../../../../projects/layout/src/modules/footer/footer.component';
 

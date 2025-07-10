@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IntroComponent } from './components/intro/intro.component';
-import { MainComponent } from './components/main/main.component';
-import { NotFoundComponent } from './components/not-found/not-fount.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
+
+
+
+
 
 const lazyModules: Routes = [{
     path: '',
@@ -14,7 +14,7 @@ const lazyModules: Routes = [{
 const routes: Routes = [
     {
         path: '',
-        component: WelcomeComponent,
+        loadComponent: () => import('./components/welcome/welcome.component').then(m => m.WelcomeComponent),
         children: [
             {
                 path: '',
@@ -24,7 +24,7 @@ const routes: Routes = [
         ],
     }, {
         path: 'demos',
-        component: MainComponent,
+        loadComponent: () => import('./components/main/main.component').then(m => m.MainComponent),
         children: [
             {
                 path: '',
@@ -33,17 +33,17 @@ const routes: Routes = [
             },
             {
                 path: 'intro',
-                component: IntroComponent,
+                loadComponent: () => import('./components/intro/intro.component').then(m => m.IntroComponent),
             },
             ...lazyModules, {
                 path: '404',
-                component: NotFoundComponent,
+                loadComponent: () => import('./components/not-found/not-fount.component').then(m => m.NotFoundComponent),
             },
         ],
     }, {
         path: '404',
         pathMatch: 'full',
-        component: NotFoundComponent,
+        loadComponent: () => import('./components/not-found/not-fount.component').then(m => m.NotFoundComponent),
     }, {
         path: '**',
         redirectTo: '404',

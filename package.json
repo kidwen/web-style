@@ -51,7 +51,7 @@
         "jasmine-core": "^5.1.0",
         "jasmine-spec-reporter": "^7.0.0",
         "ng-packagr": "18.2.1",
-        "nx": "20.5.0",
+        "nx": "21.3.1",
         "prettier": "3.6.2",
         "protractor": "^7.0.0",
         "ts-node": "^10.9.1",

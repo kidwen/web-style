@@ -96,6 +96,17 @@ export const routes: Routes = [
             title: 'Popover Demo',
         },
     },
+    {
+        path: 'route',
+        loadComponent: () => import('./route/route.component').then(m => m.RouteComponent),
+        canActivate: [(): boolean => {
+            console.log('Route activated');
+            return true;
+        }],
+        data: {
+            title: 'Route',
+        },
+    },
 ];
 
 @NgModule({

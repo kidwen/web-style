@@ -21,6 +21,7 @@ import { NgComponentOutletCompleteExampleComponent } from './dynamic-component/n
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { PopoverDemoComponent } from './popover-demo/popover-demo.component';
+import { RouteComponent } from './route/route.component';
 
 @NgModule({
     imports: [
@@ -44,6 +45,7 @@ import { PopoverDemoComponent } from './popover-demo/popover-demo.component';
     TemplateVariablesComponent,
     AccordionComponent,
     PopoverDemoComponent,
+    RouteComponent,
     ...directives,
 ],
 })

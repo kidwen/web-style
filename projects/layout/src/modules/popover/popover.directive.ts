@@ -22,7 +22,7 @@ export class PopoverDirective {
     }
 
     @Input()
-    public position: PopoverPosition = 'top';
+    public libPopoverPosition: PopoverPosition = 'top';
 
     private componentRef: ComponentRef<PopoverComponent>;
 
@@ -32,7 +32,7 @@ export class PopoverDirective {
             fromEvent(node, 'mouseenter').subscribe(() => {
                 this.componentRef = this.viewContainerRef.createComponent(PopoverComponent);
                 this.componentRef.instance.content = this.content;
-                console.log(this.position);
+                console.log(this.libPopoverPosition);
             });
             fromEvent(node, 'mouseleave').subscribe(() => {
                 const element = this.componentRef?.location?.nativeElement;

@@ -48,7 +48,7 @@
         "@types/jasminewd2": "^2.0.8",
         "@types/node": "22.9.1",
         "angular-cli-ghpages": "^2.0.1",
-        "jasmine-core": "^5.1.0",
+        "jasmine-core": "^5.10.0",
         "jasmine-spec-reporter": "^7.0.0",
         "ng-packagr": "18.2.1",
         "nx": "20.5.0",

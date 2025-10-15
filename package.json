@@ -44,7 +44,7 @@
         "@nx/workspace": "19.6.4",
         "@schematics/angular": "18.1.2",
         "@types/estree": "^1.0.0",
-        "@types/jasmine": "^5.1.4",
+        "@types/jasmine": "^5.1.10",
         "@types/jasminewd2": "^2.0.8",
         "@types/node": "22.9.1",
         "angular-cli-ghpages": "^2.0.1",

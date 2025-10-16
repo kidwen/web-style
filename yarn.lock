@@ -3813,10 +3813,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jasmine@*", "@types/jasmine@^5.1.4":
-  version "5.1.5"
-  resolved "https://registry.npmmirror.com/@types/jasmine/-/jasmine-5.1.5.tgz#bba343c504f48e596837415f0558e10b8a0e5f7d"
-  integrity sha512-SaCZ3kM5NjOiJqMRYwHpLbTfUC2Dyk1KS3QanNFsUYPGTk70CWVK/J9ueun6zNhw/UkgV7xl8V4ZLQZNRbfnNw==
+"@types/jasmine@*", "@types/jasmine@^5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-5.1.11.tgz#2e48472c2e542c341419da8fc4ef0cffd1d7722a"
+  integrity sha512-eAij9lMAsosuA8cvRcqw7p2vO+LUraktQDmOUFx2jAnya8NUchr3DryHksfhZbRzU83vzNUSZhlk1cFdoePxwA==
 
 "@types/jasminewd2@^2.0.8":
   version "2.0.13"

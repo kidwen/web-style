@@ -439,10 +439,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/language-service@18.1.2":
-  version "18.1.2"
-  resolved "https://registry.npmmirror.com/@angular/language-service/-/language-service-18.1.2.tgz#4a80219384f8da528a44d7da30781284b4dc6262"
-  integrity sha512-2siwL+SFeAtNLjumFNmiHY1JI9/N30L2NCk/Z3ytfytZwMICunXOlMrnNare3YD9l097e4pWdniM7z8v04r2Nw==
+"@angular/language-service@20.3.6":
+  version "20.3.6"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-20.3.6.tgz#10788d96f2277e0548a0099301135a7032deca21"
+  integrity sha512-Y0+QFL916XDaG/zILFPGZw4mMn1AWUtAXiR4G6Mq871KmMuFAeTgrBY/tA0OfCR0BbpExbMxo1Md54FWdlf6gA==
 
 "@angular/material@18.2.14":
   version "18.2.14"

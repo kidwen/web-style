@@ -1,0 +1,28 @@
+<input
+    title="upload"
+    type="file"
+    [multiple]="true"
+    (click)="onFileInputClick($event)"
+    (change)="onFileSelected($event)"
+/>
+<section>
+    <div class="file-name">
+        <table>
+            <thead>
+                <th>File Name</th>
+                <th>File Size</th>
+            </thead>
+            <tbody>
+                @for (item of selectedFiles; track $index) {
+                    <tr>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.size / 1024 / 1024 }}MB</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<button (click)="uploadFiles()">submit with form data</button>
+<!-- <button (click)="uploadFilesByFetch()">submit by fetch</button> -->

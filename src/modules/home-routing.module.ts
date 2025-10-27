@@ -107,6 +107,13 @@ export const routes: Routes = [
             title: 'Route',
         },
     },
+    {
+        path: 'upload',
+        loadComponent: () => import('./upload-file/upload-file.component').then(m => m.UploadFileComponent),
+        data: {
+            title: 'upload',
+        },
+    },
 ];
 
 @NgModule({

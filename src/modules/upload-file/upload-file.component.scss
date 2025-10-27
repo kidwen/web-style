@@ -1,0 +1,10 @@
+:host(app-upload-file) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    td {
+        color: white;
+        max-inline-size: unset;
+    }
+}

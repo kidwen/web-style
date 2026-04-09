@@ -48,3 +48,7 @@ Thumbs.db
 
 .nx/cache
 .nx/workspace-data
+
+yarn.lock
+package-lock.json
+
